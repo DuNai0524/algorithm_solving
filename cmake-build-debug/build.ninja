@@ -54,8 +54,6 @@ build CMakeFiles/algorithm_solving.dir/main.cpp.obj: CXX_COMPILER__algorithm_sol
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\algorithm_solving.dir
   OBJECT_FILE_DIR = CMakeFiles\algorithm_solving.dir
-  TARGET_COMPILE_PDB = CMakeFiles\algorithm_solving.dir\
-  TARGET_PDB = algorithm_solving.pdb
 
 
 # =============================================================================
@@ -71,10 +69,141 @@ build algorithm_solving.exe: CXX_EXECUTABLE_LINKER__algorithm_solving_Debug CMak
   OBJECT_DIR = CMakeFiles\algorithm_solving.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\algorithm_solving.dir\
   TARGET_FILE = algorithm_solving.exe
   TARGET_IMPLIB = libalgorithm_solving.dll.a
-  TARGET_PDB = algorithm_solving.pdb
+  TARGET_PDB = algorithm_solving.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode797
+
+
+#############################################
+# Order-only phony target for LeetCode797
+
+build cmake_object_order_depends_target_LeetCode797: phony || CMakeFiles/LeetCode797.dir
+
+build CMakeFiles/LeetCode797.dir/leetcode/editor/cn/LeetCode797.cpp.obj: CXX_COMPILER__LeetCode797_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode797.cpp || cmake_object_order_depends_target_LeetCode797
+  DEP_FILE = CMakeFiles\LeetCode797.dir\leetcode\editor\cn\LeetCode797.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode797.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode797.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode797
+
+
+#############################################
+# Link the executable LeetCode797.exe
+
+build LeetCode797.exe: CXX_EXECUTABLE_LINKER__LeetCode797_Debug CMakeFiles/LeetCode797.dir/leetcode/editor/cn/LeetCode797.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode797.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode797.exe
+  TARGET_IMPLIB = libLeetCode797.dll.a
+  TARGET_PDB = LeetCode797.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode980
+
+
+#############################################
+# Order-only phony target for LeetCode980
+
+build cmake_object_order_depends_target_LeetCode980: phony || CMakeFiles/LeetCode980.dir
+
+build CMakeFiles/LeetCode980.dir/leetcode/editor/cn/LeetCode980.cpp.obj: CXX_COMPILER__LeetCode980_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode980.cpp || cmake_object_order_depends_target_LeetCode980
+  DEP_FILE = CMakeFiles\LeetCode980.dir\leetcode\editor\cn\LeetCode980.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode980.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode980.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode980
+
+
+#############################################
+# Link the executable LeetCode980.exe
+
+build LeetCode980.exe: CXX_EXECUTABLE_LINKER__LeetCode980_Debug CMakeFiles/LeetCode980.dir/leetcode/editor/cn/LeetCode980.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode980.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode980.exe
+  TARGET_IMPLIB = libLeetCode980.dll.a
+  TARGET_PDB = LeetCode980.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode491
+
+
+#############################################
+# Order-only phony target for LeetCode491
+
+build cmake_object_order_depends_target_LeetCode491: phony || CMakeFiles/LeetCode491.dir
+
+build CMakeFiles/LeetCode491.dir/leetcode/editor/cn/LeetCode491.cpp.obj: CXX_COMPILER__LeetCode491_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode491.cpp || cmake_object_order_depends_target_LeetCode491
+  DEP_FILE = CMakeFiles\LeetCode491.dir\leetcode\editor\cn\LeetCode491.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode491.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode491.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode491
+
+
+#############################################
+# Link the executable LeetCode491.exe
+
+build LeetCode491.exe: CXX_EXECUTABLE_LINKER__LeetCode491_Debug CMakeFiles/LeetCode491.dir/leetcode/editor/cn/LeetCode491.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode491.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode491.exe
+  TARGET_IMPLIB = libLeetCode491.dll.a
+  TARGET_PDB = LeetCode491.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode1079
+
+
+#############################################
+# Order-only phony target for LeetCode1079
+
+build cmake_object_order_depends_target_LeetCode1079: phony || CMakeFiles/LeetCode1079.dir
+
+build CMakeFiles/LeetCode1079.dir/leetcode/editor/cn/LeetCode1079.cpp.obj: CXX_COMPILER__LeetCode1079_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode1079.cpp || cmake_object_order_depends_target_LeetCode1079
+  DEP_FILE = CMakeFiles\LeetCode1079.dir\leetcode\editor\cn\LeetCode1079.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode1079.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode1079.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode1079
+
+
+#############################################
+# Link the executable LeetCode1079.exe
+
+build LeetCode1079.exe: CXX_EXECUTABLE_LINKER__LeetCode1079_Debug CMakeFiles/LeetCode1079.dir/leetcode/editor/cn/LeetCode1079.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode1079.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode1079.exe
+  TARGET_IMPLIB = libLeetCode1079.dll.a
+  TARGET_PDB = LeetCode1079.exe.dbg
 
 
 #############################################
@@ -102,6 +231,14 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build LeetCode1079: phony LeetCode1079.exe
+
+build LeetCode491: phony LeetCode491.exe
+
+build LeetCode797: phony LeetCode797.exe
+
+build LeetCode980: phony LeetCode980.exe
+
 build algorithm_solving: phony algorithm_solving.exe
 
 # =============================================================================
@@ -112,7 +249,7 @@ build algorithm_solving: phony algorithm_solving.exe
 #############################################
 # Folder: F:/CodeArea/algorithm-solving/cmake-build-debug
 
-build all: phony algorithm_solving.exe
+build all: phony algorithm_solving.exe LeetCode797.exe LeetCode980.exe LeetCode491.exe LeetCode1079.exe
 
 # =============================================================================
 # Built-in targets
@@ -121,14 +258,14 @@ build all: phony algorithm_solving.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineRCCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCCompiler.cmake.in E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestRCCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Determine-CXX.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake F$:/CodeArea/algorithm-solving/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake F$:/CodeArea/algorithm-solving/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCCompilerABI.c E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompileFeatures.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineRCCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitIncludeInfo.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseImplicitLinkInfo.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeParseLibraryArchitecture.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCCompiler.cmake.in E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystem.cmake.in E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestCompilerCommon.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeTestRCCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Determine-CXX.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake F$:/CodeArea/algorithm-solving/CMakeLists.txt: phony
+build CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake F$:/CodeArea/algorithm-solving/CMakeLists.txt: phony
 
 
 #############################################

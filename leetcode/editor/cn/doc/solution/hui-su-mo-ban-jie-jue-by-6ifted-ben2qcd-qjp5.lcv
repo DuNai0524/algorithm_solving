@@ -1,0 +1,99 @@
+> Problem: [980. 不同路径 III](https://leetcode.cn/problems/unique-paths-iii/description/)
+
+[TOC]
+
+# 思路
+
+> 确立返回条件，和处理方式即可
+
+# 解题方法
+
+* []
+
+```C++
+class Solution {
+public:
+
+    void dfs(...) {
+        if (...) {
+            处理结果
+            return;
+        }
+
+        状态改变
+        for (...) {
+            处理该层
+        }
+        状态恢复
+    }
+
+    int question(...) {
+        预处理
+        dfs(...);
+        return ans
+    }
+};
+```
+
+# 复杂度
+
+时间复杂度:
+
+> 添加时间复杂度, 示例： $O(4^{m×n})$
+
+空间复杂度:
+
+> 添加空间复杂度, 示例： $O(m\times n)$
+
+# Code
+
+* []
+
+```C++
+class Solution {
+    static constexpr int dir[4][2] = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}};
+public:
+    int ans = 0;
+    int m, n;
+
+    void dfs(vector<vector<int>>& grid, int& bx, int& by, int len) {
+        if (grid[bx][by] == 2) {
+            if (len == 0) {
+                ans += 1;
+            }
+            return;
+        }
+
+        int t = grid[bx][by];
+        grid[bx][by] = -1;
+        for (int i = 0; i < 4; ++i) {
+            int nx = bx + dir[i][0];
+            int ny = by + dir[i][1];
+            if (nx >= 0 && nx < m && ny >= 0 && ny < n && grid[nx][ny] != -1) {
+                dfs(grid, nx, ny, len - 1);
+            }
+        }
+        grid[bx][by] = t;
+    }
+
+    int uniquePathsIII(vector<vector<int>>& grid) {
+        m = grid.size(), n = grid[0].size();
+        int bx, by, len = 0;
+        for (int i = 0; i < m; ++i) {
+            for (int j = 0; j < n; ++j) {
+                if (grid[i][j] == 0) {
+                    len += 1;
+                }
+                else if (grid[i][j] == 1) {
+                    len += 1;
+                    bx = i;
+                    by = j;
+                }
+            }
+        }
+        dfs(grid, bx, by, len);
+        return ans;
+    }
+};
+```
+

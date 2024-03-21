@@ -15,7 +15,11 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2,
+						3,
+						4
 					]
 				}
 			],
@@ -30,12 +34,44 @@
 					"name" : "algorithm_solving",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2,
+						3,
+						4
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LeetCode1079::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LeetCode1079-Debug-5045bccdb4704e1ec5e0.json",
+					"name" : "LeetCode1079",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LeetCode491::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LeetCode491-Debug-04b266057e0d1e0d8eae.json",
+					"name" : "LeetCode491",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LeetCode797::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LeetCode797-Debug-2057398b3e236d773c03.json",
+					"name" : "LeetCode797",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LeetCode980::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LeetCode980-Debug-eb9e7158cc0a61f8f54a.json",
+					"name" : "LeetCode980",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 0,
 					"id" : "algorithm_solving::@6890427a1f51a3e7e1df",

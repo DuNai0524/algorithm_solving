@@ -1,0 +1,89 @@
+> Problem: [491. 递增子序列](https://leetcode.cn/problems/non-decreasing-subsequences/description/)
+
+[TOC]
+
+# 思路
+
+> 本题整体思路和其他子集题目类似，关键在于如何去重。
+> 与[90. 子集 II](/problems/subsets-ii/)不同，本题不能打乱子集相对位置，所以不能简单的先排序，后去重。
+
+> 此时，构建树形模型最为关键！
+> （借用代码随想录的树形示意图）
+> ![20201124200229824-20230310131640070.png](https://pic.leetcode.cn/1697716421-NUASsR-20201124200229824-20230310131640070.png)
+> 所谓的“重复”当且仅当在同一子树下的**同一层**出现了“重复”元素！
+> 重点在“同一层”，如果是相同路径中出现重复元素，根据题意是允许的。
+
+> 在回溯（递归）算法中，同一层即递归当前操作的for循环，所以对其去重
+
+# 注意点
+
+> 本题不符题意的子集有3种情况
+> 1、子集仅有一个元素：放在每层递归前判断
+> 2、去重：对当前层用哈希去重
+> 3、不满足递增要求
+
+# 复杂度
+
+- 时间复杂度:
+
+> $O(n * 2^n)$
+
+- 空间复杂度:
+
+> $O(n)$
+
+# Code
+
+* []
+
+```C++
+
+//set模拟哈希
+class Solution {
+public:
+    vector<vector<int>> ans;
+    void backtracking(vector<int>& nums, int start, vector<int> tem){
+        if(tem.size() > 1) ans.push_back(tem);
+        if(start == nums.size()) return;
+        unordered_set<int> s;
+        for(int i = start; i < nums.size(); i++){
+            if(s.count(nums[i]) || (!tem.empty() && nums[i] < tem[tem.size() - 1])) continue;
+            s.insert(nums[i]);
+            tem.push_back(nums[i]);
+            backtracking(nums, i + 1, tem);
+            tem.pop_back();
+        }
+        return;
+    }
+    vector<vector<int>> findSubsequences(vector<int>& nums) {
+        vector<int> tem;
+        backtracking(nums, 0, tem);
+        return ans;
+    }
+};
+
+//优化：数组模拟哈希
+class Solution {
+public:
+    vector<vector<int>> ans;
+    void backtracking(vector<int>& nums, int start, vector<int> tem){
+        if(tem.size() > 1) ans.push_back(tem);
+        if(start == nums.size()) return;
+        int hash[205] = {0};
+        for(int i = start; i < nums.size(); i++){
+            if(hash[nums[i] + 100] || (!tem.empty() && nums[i] < tem[tem.size() - 1])) continue;
+            hash[nums[i] + 100] = 1;
+            tem.push_back(nums[i]);
+            backtracking(nums, i + 1, tem);
+            tem.pop_back();
+        }
+        return;
+    }
+    vector<vector<int>> findSubsequences(vector<int>& nums) {
+        vector<int> tem;
+        backtracking(nums, 0, tem);
+        return ans;
+    }
+};
+```
+
