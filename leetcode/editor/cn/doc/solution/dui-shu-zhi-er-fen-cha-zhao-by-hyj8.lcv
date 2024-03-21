@@ -1,0 +1,69 @@
+#### 解题思路：
+
+- 左上角元素是下限，右下角元素是上限，就有了一个值域，第 `k` 小的元素在这个值域中
+- 我们对值域进行二分查找，逼近值域中的目标值，第 `k` 小的元素
+- 算出中间值，并求出矩阵里小于等于这个中间值的有几个，`count` 个
+- `count` 和 `k` 比较，如果比 `k` 小，说明中间值小了，调整值域范围，否则，说明中间值大了，调整值域范围，一步步锁定目标值
+
+#### 为什么对值二分
+
+- 二分查找可以根据索引二分，也可以根据数值二分，有序数组中，索引的大小可以反映值的大小，对索引二分就行
+- 但这里不是有序的一维数组，索引不能体现值谁大谁小，无法通过二分索引逼近目标值
+- 时间复杂度是 $O(log(maxVal−minVal))$
+
+#### 统计矩阵中不大于中间值的元素个数
+
+- 我们可以先让它和一行的最右元素进行比较
+- 如果大于等于它，就大于等于它左边所有数和它自己，个数累加进去，考察下一行
+- 否则，留在当前行，继续和左边的一个比较
+- 时间复杂度是 $O(n)$，扫描走了一条折线
+
+#### 代码
+
+综合来说，时间复杂度是 $O(nlog(maxVal−minVal))$
+
+* []
+
+```Javascript
+const countInMatrix = (matrix, midVal) => {
+  const n = matrix.length;            // 这题是方阵 n行n列
+  let count = 0;
+  let row = 0;                        // 第一行
+  let col = n - 1;                    // 最后一列
+  while (row < n && col >= 0) {
+    if (midVal >= matrix[row][col]) { // 大于等于当前行的最右
+      count += col + 1;               // 不大于它的数增加col + 1个
+      row++;                          // 比较下一行
+    } else {                          // 干不过当前行的最右元素
+      col--;                          // 留在当前行，比较左边一个
+    }
+  }
+  return count;
+};
+
+const kthSmallest = (matrix, k) => {
+  const n = matrix.length;
+  let low = matrix[0][0];
+  let high = matrix[n - 1][n - 1];
+  while (low <= high) {
+    let midVal = low + ((high - low) >>> 1);   // 获取中间值
+    let count = countInMatrix(matrix, midVal); // 矩阵中小于等于它的个数
+    if (count < k) {
+      low = midVal + 1;
+    } else {
+      high = midVal - 1;
+    }
+  }
+  return low;
+};
+```
+
+#### 找到矩阵中的目标值的细节
+
+- 假设 20 是矩阵中第 `k` 小的元素，并且矩阵中有 5 个 20 ，我们看看是如何锁定这个 20 的
+- 当 `midVal` 接近 20 时：
+- 比如 `midVal` 为 19 ，则 `midVal` 大于等于矩阵中 `k-5` 个元素，它小于 `k` ，所以会 `low = midVal + 1`，low 为 20 ，high 会靠近 20 ，当 `low` 和 high 都为 20 时，midVal 为 20 ，此时 countInMatrix 返回 `k+5-1` ，它大于 `k`，所以会 `high = midVal - 1`，`high` 为 19，`high` 比 `low` 小，退出循环，返回 `low 20`
+
+- 比如 `midVal` 为 21，则 `midVal` 大于等于矩阵中 `k+5-1` 个元素，它大于 `k` ，所以会 `high = midVal - 1`，`high` 为 20，`low` 会靠近 20，当 `low` 和 `high` 都为 20，时，`midVal` 为 20 ，此时 `countInMatrix` 返回的也是 `k+5-1`，它大于 `k`，所以会 `high = midVal - 1`，`high` 为 19 ，`high` 比 `low` 小，退出循环，返回 `low 20`
+- 比如 `midVal` 为 20，则 `midVal` 大于等于矩阵中 `k+5-1` 个元素，它大于 `k`，所以会 `high = midVal - 1`，`high` 为 19，此时 `low` 可能是 20 （`low`比 `high` 大，退出循环，返回 `low 20`），`low` 可能是 19 或 19 以下，则 `low` 会靠近 `high 19`，当它们俩都 19，`midVal` 为 19 ，此时 `countInMatrix` 返回 `k-5`，它小于 `k`，`low = midVal + 1`，`low` 变 20，比 `high` 大，退出，返回 `low 20`
+

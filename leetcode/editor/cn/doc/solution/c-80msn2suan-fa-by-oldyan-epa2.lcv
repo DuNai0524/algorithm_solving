@@ -1,0 +1,68 @@
+比赛的时候看到题面就想用 $python$ 高精度偷鸡，后来也尝试过 $python$ 字符串切片偷鸡，都没有成功。
+现在试了一下 $C语言$ 的 $strcmp$ 以及 $memcmp$ ，效率很高，$O(n^2)$ 的暴力也可以过。
+以下是 $memcmp$ 代码（ $strcmp$ 代码需要在每次比较前修改一下比较区间末尾的字符）：
+![image.png](https://pic.leetcode-cn.com/1622560087-XBWSzB-image.png)
+
+* 
+
+```
+class Solution {
+    const char *s;
+    char y;
+    int cmp(int pos1, int pos2){    //比较把y插到pos1 和插到 pos2，哪个结果比较大
+        if(y!=s[pos1]){
+            return y>s[pos1]?1:-1;
+        }
+        return memcmp(s+pos1, s+pos1+1, pos2-pos1-1);
+    }
+public:
+    string maxValue(const string&n, int x) {
+        s=n.data();
+        y='0'+x;
+        if(n[0]=='-'){
+            int ansidx=1;
+            for(int i=1;i<n.size();i++){
+                if(cmp(ansidx,i+1)>0)ansidx=i+1;
+            }
+            return n.substr(0,ansidx)+y+n.substr(ansidx);
+        }
+        else{
+            int ansidx=0;
+            for(int i=0;i<n.size();i++){
+                if(cmp(ansidx,i+1)<0)ansidx=i+1;
+            }
+            return n.substr(0,ansidx)+y+n.substr(ansidx);
+        }
+    }
+};
+auto initial=[](){
+    std::ios::sync_with_stdio(0);
+	cin.tie(0); //cout.tie(0);
+    return 0;
+}();
+```
+
+在写出 $cpp$ 代码之后，翻译成相应的 $python$ 代码，$python$ 也跑过了
+![image.png](https://pic.leetcode-cn.com/1622569391-eIWIdM-image.png)
+
+* 
+
+```
+class Solution:
+    def maxValue(self, s: str, x: int) -> str:
+        y=chr(48+x)
+        if s[0]=='-':
+            ansidx=1
+            for i,c in enumerate(s):
+                if i>0 and (y,s[ansidx:i])>(s[ansidx],s[ansidx+1:i+1]):
+                    ansidx=i+1
+            return s[:ansidx]+y+s[ansidx:]
+        else:
+            ansidx=0
+            for i,c in enumerate(s):
+                if (y,s[ansidx:i])<(s[ansidx],s[ansidx+1:i+1]):
+                    ansidx=i+1
+            return s[:ansidx]+y+s[ansidx:]
+```
+
+从总时间上来看，$python$ 确实比 $cpp$ 的暴力要慢多了。有趣的是，如果是一个长十万的单字符 $(x)$ 字符串，$cpp$ 要跑 $100+ ms$，而 $python$ 只要跑 $400+ ms$, 在这个样例上 $python$ 的劣势就一点都不明显。

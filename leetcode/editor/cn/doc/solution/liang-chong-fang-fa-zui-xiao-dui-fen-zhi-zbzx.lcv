@@ -1,0 +1,347 @@
+## 方法一：最小堆
+
+合并后的第一个节点 $\textit{first}$，一定是某个链表的**头节点**（因为链表已按升序排列）。
+
+合并后的第二个节点，可能是某个链表的头节点，也可能是 $\textit{first}$ 的下一个节点。
+
+例如有三个链表 `1->2->5, 3->4->6, 4->5->6`，找到第一个节点 `1` 之后，第二个节点不是另一个链表的头节点，而是节点 `1` 的下一个节点 `2`。
+
+按照这个过程继续思考，每当我们找到一个节点值最小的节点 $x$，就把节点 $x.\textit{next}$ 加入「可能是最小节点」的集合中。
+
+因此，我们需要一个数据结构，它支持：
+
+- 从数据结构中找到并移除最小节点。
+- 插入节点。
+
+这可以用**最小堆**实现。初始把所有链表的头节点入堆，然后不断弹出堆中最小节点 $x$，如果 $x.\textit{next}$ 不为空就加入堆中。循环直到堆为空。把弹出的节点按顺序拼接起来，就得到了答案。
+
+实现时，可以用**哨兵节点**简化代码，具体请看[【基础算法精讲 06】](https://www.bilibili.com/video/BV1sd4y1x7KN/)。
+
+* [sol-Python3]
+
+```py
+ListNode.__lt__ = lambda a, b: a.val < b.val  # 让堆可以比较节点大小
+
+class Solution:
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        cur = dummy = ListNode()  # 哨兵节点，作为合并后链表头节点的前一个节点
+        h = [head for head in lists if head]  # 初始把所有链表的头节点入堆
+        heapify(h)  # 堆化
+        while h:  # 循环直到堆为空
+            node = heappop(h)  # 剩余节点中的最小节点
+            if node.next:  # 下一个节点不为空
+                heappush(h, node.next)  # 下一个节点有可能是最小节点，入堆
+            cur.next = node  # 合并到新链表中
+            cur = cur.next  # 准备合并下一个节点
+        return dummy.next  # 哨兵节点的下一个节点就是新链表的头节点
+```
+
+* [sol-Java]
+
+```java
+class Solution {
+    public ListNode mergeKLists(ListNode[] lists) {
+        PriorityQueue<ListNode> pq = new PriorityQueue<>((a, b) -> a.val - b.val);
+        for (ListNode head : lists)
+            if (head != null)
+                pq.offer(head);
+
+        ListNode dummy = new ListNode(); // 哨兵节点，作为合并后链表头节点的前一个节点
+        ListNode cur = dummy;
+        while (!pq.isEmpty()) { // 循环直到堆为空
+            ListNode node = pq.poll(); // 剩余节点中的最小节点
+            if (node.next != null) // 下一个节点不为空
+                pq.offer(node.next); // 下一个节点有可能是最小节点，入堆
+            cur.next = node; // 合并到新链表中
+            cur = cur.next; // 准备合并下一个节点
+        }
+        return dummy.next; // 哨兵节点的下一个节点就是新链表的头节点
+    }
+}
+```
+
+* [sol-C++]
+
+```cpp
+class Solution {
+public:
+    ListNode *mergeKLists(vector<ListNode *> &lists) {
+        auto cmp = [](const ListNode *a, const ListNode *b) {
+            return a->val > b->val; // 最小堆
+        };
+        priority_queue<ListNode*, vector<ListNode*>, decltype(cmp)> pq;
+        for (auto head: lists)
+            if (head) pq.push(head);
+
+        auto dummy = new ListNode(); // 哨兵节点，作为合并后链表头节点的前一个节点
+        auto cur = dummy;
+        while (!pq.empty()) { // 循环直到堆为空
+            auto node = pq.top(); // 剩余节点中的最小节点
+            pq.pop();
+            if (node->next) // 下一个节点不为空
+                pq.push(node->next); // 下一个节点有可能是最小节点，入堆
+            cur->next = node; // 合并到新链表中
+            cur = cur->next; // 准备合并下一个节点
+        }
+        return dummy->next; // 哨兵节点的下一个节点就是新链表的头节点
+    }
+};
+```
+
+* [sol-Go]
+
+```go
+func mergeKLists(lists []*ListNode) *ListNode {
+    h := hp{}
+    for _, head := range lists {
+        if head != nil {
+            h = append(h, head)
+        }
+    }
+    heap.Init(&h) // 堆化
+
+    dummy := &ListNode{} // 哨兵节点，作为合并后链表头节点的前一个节点
+    cur := dummy
+    for len(h) > 0 { // 循环直到堆为空
+        node := heap.Pop(&h).(*ListNode) // 剩余节点中的最小节点
+        if node.Next != nil { // 下一个节点不为空
+            heap.Push(&h, node.Next) // 下一个节点有可能是最小节点，入堆
+        }
+        cur.Next = node // 合并到新链表中
+        cur = cur.Next // 准备合并下一个节点
+    }
+    return dummy.Next // 哨兵节点的下一个节点就是新链表的头节点
+}
+
+type hp []*ListNode
+func (h hp) Len() int           { return len(h) }
+func (h hp) Less(i, j int) bool { return h[i].Val < h[j].Val } // 最小堆
+func (h hp) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
+func (h *hp) Push(v any)        { *h = append(*h, v.(*ListNode)) }
+func (h *hp) Pop() any          { a := *h; v := a[len(a)-1]; *h = a[:len(a)-1]; return v }
+```
+
+* [sol-JavaScript]
+
+```js
+var mergeKLists = function (lists) {
+    let pq = new MinPriorityQueue({priority: e => e.val});
+    for (const head of lists)
+        if (head) pq.enqueue(head);
+
+    let dummy = new ListNode(); // 哨兵节点，作为合并后链表头节点的前一个节点
+    let cur = dummy;
+    while (!pq.isEmpty()) { // 循环直到堆为空
+        const node = pq.dequeue().element; // 剩余节点中的最小节点
+        if (node.next) // 下一个节点不为空
+            pq.enqueue(node.next); // 下一个节点有可能是最小节点，入堆
+        cur.next = node; // 合并到新链表中
+        cur = cur.next; // 准备合并下一个节点
+    }
+    return dummy.next; // 哨兵节点的下一个节点就是新链表的头节点
+};
+```
+
+#### 复杂度分析
+
+- 时间复杂度：$\mathcal{O}(n\log k)$，其中 $k$ 为 $\textit{lists}$ 的长度，$n$ 为所有链表的节点数之和。
+- 空间复杂度：$\mathcal{O}(k)$。堆中至多有 $k$ 个元素。
+
+## 方法二：分治
+
+暴力做法是，按照 [21. 合并两个有序链表](https://leetcode.cn/problems/merge-two-sorted-lists/) 的 [题解思路](https://leetcode.cn/problems/merge-two-sorted-lists/solution/liang-chong-fang-fa-die-dai-di-gui-pytho-wf75)，先合并前两个链表，再把得到的新链表和第三个链表合并，再和第四个链表合并，依此类推。
+
+但是这种做法，平均每个节点会参与到 $\mathcal{O}(k)$ 次合并中（用 $(1+2+\cdots +k)/k$ 粗略估计），所以总的时间复杂度为 $\mathcal{O}(nk)$。
+
+一个巧妙的思路是，把 $\textit{lists}$ 一分为二（尽量**均分**），先合并前一半的链表，再合并后一半的链表，然后把这两个链表合并成最终的链表。如何合并前一半的链表呢？我们可以继续一分为二。如此分下去直到只有一个链表，此时无需合并。
+
+我们可以写一个递归来完成上述逻辑，如果你对递归头晕，请看[【基础算法精讲 09】](https://www.bilibili.com/video/BV1UD4y1Y769/)。
+
+按照一分为二再合并的逻辑，递归像是在后序遍历一棵平衡二叉树。由于平衡树的高度是 $\mathcal{O}(\log k)$，所以每个链表节点只会出现在 $\mathcal{O}(\log k)$ 次合并中！这样就做到了更快的 $\mathcal{O}(n\log k)$ 时间。
+
+* [sol-Python3]
+
+```py
+class Solution:
+    # 21. 合并两个有序链表
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        cur = dummy = ListNode()  # 用哨兵节点简化代码逻辑
+        while list1 and list2:
+            if list1.val < list2.val:
+                cur.next = list1  # 把 list1 加到新链表中
+                list1 = list1.next
+            else:  # 注：相等的情况加哪个节点都是可以的
+                cur.next = list2  # 把 list2 加到新链表中
+                list2 = list2.next
+            cur = cur.next
+        cur.next = list1 if list1 else list2  # 拼接剩余链表
+        return dummy.next
+
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        m = len(lists)
+        if m == 0: return None  # 注意输入的 lists 可能是空的
+        if m == 1: return lists[0]  # 无需合并，直接返回
+        left = self.mergeKLists(lists[:m // 2])  # 合并左半部分
+        right = self.mergeKLists(lists[m // 2:])  # 合并右半部分
+        return self.mergeTwoLists(left, right)  # 最后把左半和右半合并
+```
+
+* [sol-Java]
+
+```java
+class Solution {
+    public ListNode mergeKLists(ListNode[] lists) {
+        return mergeKLists(lists, 0, lists.length);
+    }
+
+    // 合并从 lists[i] 到 lists[j-1] 的链表
+    private ListNode mergeKLists(ListNode[] lists, int i, int j) {
+        int m = j - i;
+        if (m == 0) return null; // 注意输入的 lists 可能是空的
+        if (m == 1) return lists[i]; // 无需合并，直接返回
+        ListNode left = mergeKLists(lists, i, i + m / 2); // 合并左半部分
+        ListNode right = mergeKLists(lists, i + m / 2, j); // 合并右半部分
+        return mergeTwoLists(left, right); // 最后把左半和右半合并
+    }
+
+    // 21. 合并两个有序链表
+    private ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode dummy = new ListNode(); // 用哨兵节点简化代码逻辑
+        ListNode cur = dummy; // cur 指向新链表的末尾
+        while (list1 != null && list2 != null) {
+            if (list1.val < list2.val) {
+                cur.next = list1; // 把 list1 加到新链表中
+                list1 = list1.next;
+            } else { // 注：相等的情况加哪个节点都是可以的
+                cur.next = list2; // 把 list2 加到新链表中
+                list2 = list2.next;
+            }
+            cur = cur.next;
+        }
+        cur.next = list1 != null ? list1 : list2; // 拼接剩余链表
+        return dummy.next;
+    }
+}
+```
+
+* [sol-C++]
+
+```cpp
+class Solution {
+    // 21. 合并两个有序链表
+    ListNode *mergeTwoLists(ListNode *list1, ListNode *list2) {
+        auto dummy = new ListNode(); // 用哨兵节点简化代码逻辑
+        auto cur = dummy; // cur 指向新链表的末尾
+        while (list1 && list2) {
+            if (list1->val < list2->val) {
+                cur->next = list1; // 把 list1 加到新链表中
+                list1 = list1->next;
+            } else { // 注：相等的情况加哪个节点都是可以的
+                cur->next = list2; // 把 list2 加到新链表中
+                list2 = list2->next;
+            }
+            cur = cur->next;
+        }
+        cur->next = list1 ? list1 : list2; // 拼接剩余链表
+        return dummy->next;
+    }
+
+    // 合并从 lists[i] 到 lists[j-1] 的链表
+    ListNode *mergeKLists(vector<ListNode *> &lists, int i, int j) {
+        int m = j - i;
+        if (m == 0) return nullptr; // 注意输入的 lists 可能是空的
+        if (m == 1) return lists[i]; // 无需合并，直接返回
+        auto left = mergeKLists(lists, i, i + m / 2); // 合并左半部分
+        auto right = mergeKLists(lists, i + m / 2, j); // 合并右半部分
+        return mergeTwoLists(left, right); // 最后把左半和右半合并
+    }
+
+public:
+    ListNode *mergeKLists(vector<ListNode *> &lists) {
+        return mergeKLists(lists, 0, lists.size());
+    }
+};
+```
+
+* [sol-Go]
+
+```go
+func mergeTwoLists(list1, list2 *ListNode) *ListNode {
+    dummy := &ListNode{} // 用哨兵节点简化代码逻辑
+    cur := dummy         // cur 指向新链表的末尾
+    for list1 != nil && list2 != nil {
+        if list1.Val < list2.Val {
+            cur.Next = list1 // 把 list1 加到新链表中
+            list1 = list1.Next
+        } else { // 注：相等的情况加哪个节点都是可以的
+            cur.Next = list2 // 把 list2 加到新链表中
+            list2 = list2.Next
+        }
+        cur = cur.Next
+    }
+    // 拼接剩余链表
+    if list1 != nil {
+        cur.Next = list1
+    } else {
+        cur.Next = list2
+    }
+    return dummy.Next
+}
+
+func mergeKLists(lists []*ListNode) *ListNode {
+    m := len(lists)
+    if m == 0 { // 注意输入的 lists 可能是空的
+        return nil
+    }
+    if m == 1 { // 无需合并，直接返回
+        return lists[0]
+    }
+    left := mergeKLists(lists[:m/2]) // 合并左半部分
+    right := mergeKLists(lists[m/2:]) // 合并右半部分
+    return mergeTwoLists(left, right) // 最后把左半和右半合并
+}
+```
+
+* [sol-JavaScript]
+
+```js
+// 21. 合并两个有序链表
+var mergeTwoLists = function (list1, list2) {
+    let dummy = new ListNode(); // 用哨兵节点简化代码逻辑
+    let cur = dummy; // cur 指向新链表的末尾
+    while (list1 && list2) {
+        if (list1.val < list2.val) {
+            cur.next = list1; // 把 list1 加到新链表中
+            list1 = list1.next;
+        } else { // 注：相等的情况加哪个节点都是可以的
+            cur.next = list2; // 把 list2 加到新链表中
+            list2 = list2.next;
+        }
+        cur = cur.next;
+    }
+    cur.next = list1 ? list1 : list2; // 拼接剩余链表
+    return dummy.next;
+};
+
+var mergeKLists = function (lists) {
+    // 合并从 lists[i] 到 lists[j-1] 的链表
+    function dfs(i, j) {
+        const m = j - i;
+        if (m === 0) return null; // 注意输入的 lists 可能是空的
+        if (m === 1) return lists[i]; // 无需合并，直接返回
+        const left = dfs(i, i + (m >> 1)); // 合并左半部分
+        const right = dfs(i + (m >> 1), j); // 合并右半部分
+        return mergeTwoLists(left, right); // 最后把左半和右半合并
+    }
+    return dfs(0, lists.length);
+};
+```
+
+#### 复杂度分析
+
+- 时间复杂度：$\mathcal{O}(n\log k)$，其中 $k$ 为 $\textit{lists}$ 的长度，$n$ 为所有链表的节点数之和。每个节点参与链表合并的次数为 $\mathcal{O}(\log k)$ 次，一共有 $n$ 个节点，所以总的时间复杂度为 $\mathcal{O}(n\log k)$。
+- 空间复杂度：$\mathcal{O}(\log k)$。递归深度为 $\mathcal{O}(\log k)$，需要用到 $\mathcal{O}(\log k)$ 的栈空间。Python 忽略切片产生的额外空间。
+
+[往期每日一题题解（按 tag 分类）](https://github.com/EndlessCheng/codeforces-go/blob/master/leetcode/SOLUTIONS.md)
+
+欢迎关注 [B站@灵茶山艾府](https://space.bilibili.com/206214)

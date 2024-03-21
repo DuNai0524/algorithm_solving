@@ -1,0 +1,54 @@
+> Problem: [1209. 删除字符串中的所有相邻重复项 II](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string-ii/description/)
+
+[TOC]
+
+# 思路
+
+> 讲述看到这一题的思路
+
+# 解题方法
+
+> 描述你的解题方法
+
+# 复杂度
+
+时间复杂度:
+
+> 添加时间复杂度, 示例： $O(n)$
+
+空间复杂度:
+
+> 添加空间复杂度, 示例： $O(n)$
+
+# Code
+
+* []
+
+```C++
+class Solution {
+public:
+    class A{
+        public:
+        char ch;
+        int ans=0;
+    };
+    string removeDuplicates(string s, int k) {
+        vector<A> stk;
+        for(auto n:s)
+        {
+            if(!stk.empty()&&stk.back().ch==n)
+            {
+                if(++stk.back().ans==k) stk.pop_back();
+            }
+            else stk.push_back({n,1});
+        }
+        string res;
+        for(auto &pair:stk)
+        {
+            while(pair.ans--) res.push_back(pair.ch);
+        }
+        return res;
+    }
+};
+```
+

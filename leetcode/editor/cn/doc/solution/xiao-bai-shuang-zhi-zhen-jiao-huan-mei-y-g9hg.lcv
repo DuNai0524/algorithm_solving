@@ -1,0 +1,44 @@
+> Problem: [905. 按奇偶排序数组](https://leetcode.cn/problems/sort-array-by-parity/description/)
+
+[TOC]
+
+# 思路
+
+- **le标记左边的奇数，ri标记右边的偶数**：正确的应该是偶数在左奇数在右，le和ri标记的是不正确的位置，交换每一对不正确的奇偶
+
+![image.png](https://pic.leetcode.cn/1709179101-LkQjRS-image.png)
+
+# 复杂度
+
+时间复杂度: $O(n)$
+
+> 虽然有while嵌套，但本质上是对nums进行一次遍历
+
+空间复杂度: $O(1)$
+
+# Code
+
+* []
+
+```C++
+class Solution {
+public:
+    vector<int> sortArrayByParity(vector<int>& nums) {
+        int n=nums.size(),le=0,ri=n-1,temp;//le标记左边的奇数，ri标记右边的偶数
+        while(le<ri){
+            while(le<n&&nums[le]%2==0)le++;
+            while(ri>-1&&nums[ri]%2==1)ri--;
+            if(le<ri){
+                temp=nums[le];
+                nums[le]=nums[ri];
+                nums[ri]=temp;
+                le++;
+                ri--;                
+            }
+            else break;
+        }
+        return nums;
+    }
+};
+```
+

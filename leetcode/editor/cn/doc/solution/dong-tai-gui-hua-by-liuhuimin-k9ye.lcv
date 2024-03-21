@@ -1,0 +1,35 @@
+> Problem: [1884. 鸡蛋掉落-两枚鸡蛋](https://leetcode.cn/problems/egg-drop-with-2-eggs-and-n-floors/description/)
+
+# Code
+
+* []
+
+```C++
+class Solution {
+public:
+    int twoEggDrop(int n) {
+//两枚鸡蛋,是典型的动态规划的问题,这里主要的难点在于找到状态转移方程
+//使用二维数组来完成,dp[i][j]的含义为目前有i+1个鸡蛋验证j楼层的话需要的最小的操作次数是多少
+vector<vector<int>> dp(2,vector<int>(n+1,INT_MAX));
+//初始化初值
+dp[0][0]=0;
+dp[1][0]=0;
+//表示验证0楼层的操作次数一定为0,因为f=0;
+//初始化第一行数据,假设只有1个鸡蛋,那么验证多少层的楼就需要多少次的操作
+for(int j=1;j<=n;j++){
+    dp[0][j]=j;
+}
+//初始化第二行数据,假设有2个鸡蛋,那么可以选择一个鸡蛋从[1,n]层中的k层扔下去,那么会有两种可能
+//一种可能是鸡蛋碎掉了,那么说明f<k,则需要用剩下的一个鸡蛋去测试是否在[1,k-1]层即dp[0][k-1]
+//另一种情况是鸡蛋没有碎,那么说明f>=k,还剩两个鸡蛋去测试是否在[k,n]层,其最小的操作次数
+//和dp[1][n-k]
+for(int j=1;j<=n;j++){
+    for(int k=1;k<=j;k++){
+        dp[1][j]=min(dp[1][j],max(dp[0][k-1]+1,dp[1][j-k]+1));
+    }
+}
+return dp[1][n];
+    }
+};
+```
+

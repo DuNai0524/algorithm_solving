@@ -1,0 +1,29 @@
+class Solution {
+public:
+    vector<string> ans;
+    void backTrace(string s,int left,int right) {
+        if(left == 0 && right == 0) {
+            ans.push_back(s);
+            return;
+        }
+
+        if(left>right)return;
+
+        if(left>0) {
+            backTrace(s + '(' ,left - 1,right);
+        }
+
+        if(right>0) {
+            backTrace(s + ')',left,right - 1);
+        }
+    }
+
+    vector<string> generateParenthesis(int n) {
+        if(n==0)return ans;
+        backTrace("",n,n);
+        return ans;
+    }
+};
+
+//runtime:3 ms
+//memory:15.1 MB

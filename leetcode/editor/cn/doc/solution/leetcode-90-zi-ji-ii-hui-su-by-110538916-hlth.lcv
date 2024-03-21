@@ -1,0 +1,34 @@
+> Problem: [90. 子集 II](https://leetcode.cn/problems/subsets-ii/description/)
+
+[TOC]
+
+# 思路
+
+![iShot_2024-03-12_16.36.29.jpg](https://pic.leetcode.cn/1710232640-izDVIQ-iShot_2024-03-12_16.36.29.jpg)
+
+# Code
+
+* []
+
+```JavaScript
+var subsetsWithDup = function (nums) {
+    let res = [];
+    nums.sort((a, b) => a - b);
+    backtrack(res, nums, 0, []);
+    return res;
+};
+
+const backtrack = (res, nums, startIndex, path) => {
+    res.push([...path]);
+
+    for (let i = startIndex; i < nums.length; i++) {
+        if (i > startIndex && nums[i] === nums[i - 1]) continue;
+        path.push(nums[i]);
+        backtrack(res, nums, i + 1, path);
+        path.pop();
+    }
+}
+```
+
+# [题解传送门](https://ricepudding.cn/article/6c9e1c7)
+

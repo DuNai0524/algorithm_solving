@@ -1,0 +1,228 @@
+## 分析
+
+首先明确计算规则：从示例 1 可以知道，对于三元组 $(2,3,4)$ 和 $(4,3,2)$，我们只统计了其中的 $(2,3,4)$，并没有把 $(4,3,2)$ 也统计到答案中，所以题目意思是把这两个三元组当成是同一个三元组，我们不能重复统计。
+
+既然有这样的规则，那么不妨规定三角形的三条边 $a,b,c$ 满足：
+
+$$
+1\le a\le b\le c
+$$
+
+这可以保证我们在统计合法三元组 $(a,b,c)$ 的个数时，不会把 $(c,b,a)$ 这样的三元组也统计进去。
+
+由于三角形两边之和大于第三边，我们有
+
+$$
+a+b>c\\
+a+c>b\\
+b+c>a
+$$
+
+上式中的 $a+c>b$ 是必然成立的，因为 $a+c\ge a+b>b$（注意 $a$ 至少是 $1$）。
+
+同样的，$b+c>a$ 也必然成立，因为 $b+c\ge a+a=2a>a$（注意 $a$ 至少是 $1$）。
+
+所以只需要考虑第一个式子，那么问题变成，从 $\textit{nums}$ 中选三个数，满足 $1\le a\le b\le c$ 且 $a+b>c$ 的方案数。
+
+## 算法
+
+请先看视频：[相向双指针【基础算法精讲】](https://www.bilibili.com/video/BV1bP411c7oJ/)。
+
+为了能够使用相向双指针，先对数组从小到大排序。
+
+外层循环枚举 $c=\textit{nums}[k]$，内层循环用相向双指针枚举 $a=\textit{nums}[i]$ 和 $b=\textit{nums}[j]$，具体如下：
+
+- 初始化左右指针 $i=0,j=k-1$。
+- 如果 $\textit{nums}[i]+\textit{nums}[j] > c$，由于数组是有序的，$\textit{nums}[j]$ 与下标 $i'$ 在 $[i,j-1]$ 中的任何 $\textit{nums}[i']$ 相加，都是 $>c$ 的，因此直接找到了 $j-i$ 个合法方案，加到答案中，然后将 $j$ 减一。
+- 如果 $\textit{nums}[i]+\textit{nums}[j] \le c$，由于数组是有序的，$\textit{nums}[i]$ 与下标 $j'$ 在 $[i+1,j]$ 中的任何 $\textit{nums}[j']$ 相加，都是 $\le c$ 的，因此后面无需考虑 $\textit{nums}[i]$，将 $i$ 加一。
+- 重复上述过程直到 $i\ge j$ 为止。
+
+* [sol-Python3]
+
+```py
+class Solution:
+    def triangleNumber(self, nums: List[int]) -> int:
+        nums.sort()
+        ans = 0
+        for k in range(2, len(nums)):
+            c = nums[k]
+            i = 0  # a=nums[i]
+            j = k - 1  # b=nums[j]
+            while i < j:
+                if nums[i] + nums[j] > c:
+                    # 由于 nums 已经从小到大排序
+                    # nums[i]+nums[j] > c 同时意味着：
+                    # nums[i+1]+nums[j] > c
+                    # nums[i+2]+nums[j] > c
+                    # ...
+                    # nums[j-1]+nums[j] > c
+                    # 从 i 到 j-1 一共 j-i 个
+                    ans += j - i
+                    j -= 1
+                else:
+                    # 由于 nums 已经从小到大排序
+                    # nums[i]+nums[j] <= c 同时意味着
+                    # nums[i]+nums[j-1] <= c
+                    # ...
+                    # nums[i]+nums[i+1] <= c
+                    # 所以在后续的循环中，nums[i] 不可能作为三角形的边长，没有用了
+                    i += 1
+        return ans
+```
+
+* [sol-Java]
+
+```java
+class Solution {
+    public int triangleNumber(int[] nums) {
+        Arrays.sort(nums);
+        int ans = 0;
+        for (int k = 2; k < nums.length; ++k) {
+            int c = nums[k];
+            int i = 0; // a=nums[i]
+            int j = k - 1; // b=nums[j]
+            while (i < j) {
+                if (nums[i] + nums[j] > c) {
+                    // 由于 nums 已经从小到大排序
+                    // nums[i]+nums[j] > c 同时意味着：
+                    // nums[i+1]+nums[j] > c
+                    // nums[i+2]+nums[j] > c
+                    // ...
+                    // nums[j-1]+nums[j] > c
+                    // 从 i 到 j-1 一共 j-i 个
+                    ans += j - i;
+                    j--;
+                } else {
+                    // 由于 nums 已经从小到大排序
+                    // nums[i]+nums[j] <= c 同时意味着
+                    // nums[i]+nums[j-1] <= c
+                    // ...
+                    // nums[i]+nums[i+1] <= c
+                    // 所以在后续的循环中，nums[i] 不可能作为三角形的边长，没有用了
+                    i++;
+                }
+            }
+        }
+        return ans;
+    }
+}
+```
+
+* [sol-C++]
+
+```cpp
+class Solution {
+public:
+    int triangleNumber(vector<int> &nums) {
+        sort(nums.begin(), nums.end());
+        int ans = 0;
+        for (int k = 2; k < nums.size(); k++) {
+            int c = nums[k];
+            int i = 0; // a=nums[i]
+            int j = k - 1; // b=nums[j]
+            while (i < j) {
+                if (nums[i] + nums[j] > c) {
+                    // 由于 nums 已经从小到大排序
+                    // nums[i]+nums[j] > c 同时意味着：
+                    // nums[i+1]+nums[j] > c
+                    // nums[i+2]+nums[j] > c
+                    // ...
+                    // nums[j-1]+nums[j] > c
+                    // 从 i 到 j-1 一共 j-i 个
+                    ans += j - i;
+                    j--;
+                } else {
+                    // 由于 nums 已经从小到大排序
+                    // nums[i]+nums[j] <= c 同时意味着
+                    // nums[i]+nums[j-1] <= c
+                    // ...
+                    // nums[i]+nums[i+1] <= c
+                    // 所以在后续的循环中，nums[i] 不可能作为三角形的边长，没有用了
+                    i++;
+                }
+            }
+        }
+        return ans;
+    }
+};
+```
+
+* [sol-Go]
+
+```go
+func triangleNumber(nums []int) (ans int) {
+    sort.Ints(nums)
+    for k := 2; k < len(nums); k++ {
+        c := nums[k]
+        i := 0     // a=nums[i]
+        j := k - 1 // b=nums[j]
+        for i < j {
+            if nums[i]+nums[j] > c {
+                // 由于 nums 已经从小到大排序
+                // nums[i]+nums[j] > c 同时意味着：
+                // nums[i+1]+nums[j] > c
+                // nums[i+2]+nums[j] > c
+                // ...
+                // nums[j-1]+nums[j] > c
+                // 从 i 到 j-1 一共 j-i 个
+                ans += j - i
+                j--
+            } else {
+                // 由于 nums 已经从小到大排序
+                // nums[i]+nums[j] <= c 同时意味着
+                // nums[i]+nums[j-1] <= c
+                // ...
+                // nums[i]+nums[i+1] <= c
+                // 所以在后续的循环中，nums[i] 不可能作为三角形的边长，没有用了
+                i++
+            }
+        }
+    }
+    return ans
+}
+```
+
+* [sol-JavaScript]
+
+```js
+var triangleNumber = function (nums) {
+    nums.sort((a, b) => a - b);
+    let ans = 0;
+    for (let k = 2; k < nums.length; ++k) {
+        const c = nums[k];
+        let i = 0; // a=nums[i]
+        let j = k - 1; // b=nums[j]
+        while (i < j) {
+            if (nums[i] + nums[j] > c) {
+                // 由于 nums 已经从小到大排序
+                // nums[i]+nums[j] > c 同时意味着：
+                // nums[i+1]+nums[j] > c
+                // nums[i+2]+nums[j] > c
+                // ...
+                // nums[j-1]+nums[j] > c
+                // 从 i 到 j-1 一共 j-i 个
+                ans += j - i;
+                j--;
+            } else {
+                // 由于 nums 已经从小到大排序
+                // nums[i]+nums[j] <= c 同时意味着
+                // nums[i]+nums[j-1] <= c
+                // ...
+                // nums[i]+nums[i+1] <= c
+                // 所以在后续的循环中，nums[i] 不可能作为三角形的边长，没有用了
+                i++;
+            }
+        }
+    }
+    return ans;
+};
+```
+
+#### 复杂度分析
+
+- 时间复杂度：$\mathcal{O}(n^2)$，其中 $n$ 为 $\textit{nums}$ 的长度。
+- 空间复杂度：$\mathcal{O}(1)$。不计入排序的栈开销，仅用到若干额外变量。
+
+[我的其它题解（按 tag 分类）](https://github.com/EndlessCheng/codeforces-go/blob/master/leetcode/SOLUTIONS.md)
+
+欢迎关注 [B站@灵茶山艾府](https://space.bilibili.com/206214)

@@ -1,0 +1,115 @@
+# 思路
+
+这道题目，可以中序遍历把二叉树转变为有序数组，然后在根据有序数组构造平衡二叉搜索树。
+
+建议做这道题之前，先看如下两篇题解：
+* [98.验证二叉搜索树](https://programmercarl.com/0098.验证二叉搜索树.html) 学习二叉搜索树的特性
+* [108.将有序数组转换为二叉搜索树](https://programmercarl.com/0108.将有序数组转换为二叉搜索树.html) 学习如何通过有序数组构造二叉搜索树
+
+这两道题目做过之后，本题分分钟就可以做出来了。
+
+代码如下：
+
+* CPP
+
+```CPP
+class Solution {
+private:
+    vector<int> vec;
+    // 有序树转成有序数组
+    void traversal(TreeNode* cur) {
+        if (cur == nullptr) {
+            return;
+        }
+        traversal(cur->left);
+        vec.push_back(cur->val);
+        traversal(cur->right);
+    }
+    // 有序数组转平衡二叉树
+    TreeNode* getTree(vector<int>& nums, int left, int right) {
+        if (left > right) return nullptr;
+        int mid = left + ((right - left) / 2);
+        TreeNode* root = new TreeNode(nums[mid]);
+        root->left = getTree(nums, left, mid - 1);
+        root->right = getTree(nums, mid + 1, right);
+        return root;
+    }
+
+public:
+    TreeNode* balanceBST(TreeNode* root) {
+        traversal(root);
+        return getTree(vec, 0, vec.size() - 1);
+    }
+};
+```
+
+# 其他语言版本
+
+Java：
+
+* java
+
+```java
+class Solution {
+    ArrayList <Integer> res = new ArrayList<Integer>();
+    // 有序树转成有序数组
+    private void travesal(TreeNode cur) {
+            if (cur == null) return;
+            travesal(cur.left);
+            res.add(cur.val);
+            travesal(cur.right);
+        }
+    // 有序数组转成平衡二叉树
+    private TreeNode getTree(ArrayList <Integer> nums, int left, int right) {
+        if (left > right) return null;
+        int mid = left + (right - left) / 2;
+        TreeNode root = new TreeNode(nums.get(mid));
+        root.left = getTree(nums, left, mid - 1);
+        root.right = getTree(nums, mid + 1, right);
+        return root;
+    }
+    public TreeNode balanceBST(TreeNode root) {
+        travesal(root);
+        return getTree(res, 0, res.size() - 1);
+    }
+}
+```
+
+Python：
+
+* python
+
+```python
+class Solution:
+    def balanceBST(self, root: TreeNode) -> TreeNode:
+        res = []
+        # 有序树转成有序数组
+        def traversal(cur: TreeNode):
+            if not cur: return
+            traversal(cur.left)
+            res.append(cur.val)
+            traversal(cur.right)
+        # 有序数组转成平衡二叉树
+        def getTree(nums: List, left, right):
+            if left > right: return 
+            mid = left + (right -left) // 2
+            root = TreeNode(nums[mid])
+            root.left = getTree(nums, left, mid - 1)
+            root.right = getTree(nums, mid + 1, right)
+            return root
+        traversal(root)
+        return getTree(res, 0, len(res) - 1)
+```
+
+# 二叉树力扣题目总结
+
+按照如下顺序刷力扣上的题目，相信会帮你在学习二叉树的路上少走很多弯路。
+
+![image.png](https://pic.leetcode-cn.com/1625557068-rTzCSW-image.png)
+
+-----------
+
+**大家好，我是程序员Carl，点击[我的头像](https://programmercarl.com)**，查看力扣详细刷题攻略，你会发现相见恨晚！
+
+**如果感觉题解对你有帮助，不要吝啬给一个👍吧！**
+

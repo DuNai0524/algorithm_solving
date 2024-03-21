@@ -1,0 +1,108 @@
+#### 思路
+
+根据题意，我们只需要保证「同一行 $i$」、「同一列 $y$」、「同一斜线」只存在一个皇后即可，「同一斜线」包括「左上-右下斜线 $l$」和「右上-左下斜线 $r$」
+
+题目中说明了 $1 <=n <=9$，这个数据量我们完全可以用状态压缩的方式进行标记
+
+- 对于 $y$ 而言：如果 $y\; &\; (1 << j)$ 为真，说明第 $j$ 列已经存在一个皇后
+- 对于 $l$ 而言：如果 $l\; &\; (1 << (i + j))$ 为真，说明 ($i$, $j$) 所在斜线（左上-右下）已经存在一个皇后
+- 对于 $r$ 而言：如果 $r\; &\; (1 << (i - j + m))$ 为真，说明 ($i$, $j$) 所在的斜线（右上-左下）已经存在一个皇后
+
+#### 代码实现
+
+* []
+
+```C++
+class Solution {
+public:
+    int m;
+    vector<int> p;
+    vector<vector<string>> ans;
+
+    void print() {
+        string s(m, '.');
+        vector<string> tmp;
+        for(auto &c : p) {
+            string q = s;
+            q[c] = 'Q';
+            tmp.push_back(q);
+        }
+        ans.push_back(tmp);
+    }
+
+    void dfs(int i, int y, int l, int r) {
+        if(i >= m) {
+            print();
+            return ;
+        }
+        for(int j = 0; j < m; j++) {
+            int sta1 = 1 << j;
+            int sta2 = 1 << (i + j);
+            int sta3 = 1 << (i - j + m);
+            if((y & sta1) || (l & sta2) || (r & sta3)) continue;
+            p.push_back(j);
+            dfs(i + 1, y | sta1, l | sta2, r | sta3);
+            p.pop_back();
+        }
+    }
+
+    vector<vector<string>> solveNQueens(int n) {
+        m = n;
+        dfs(0, 0, 0, 0);
+        return ans;
+    }
+};
+```
+
+* []
+
+```Go
+type Solution struct {
+    m int
+    p []int
+    ans [][]string
+}
+
+func (s *Solution)print() {
+    var tmp []string
+    for _, c := range s.p {
+        q := make([]byte, s.m)
+        for i := range q {
+            q[i] = '.'
+        }
+        q[c] = 'Q'
+        tmp = append(tmp, string(q))
+    }
+    s.ans = append(s.ans, tmp)
+}
+
+func (s *Solution)dfs(i, y, l, r int) {
+    if i >= s.m {
+        s.print()
+        return
+    }
+    for j := 0; j < s.m; j++ {
+        sta1, sta2, sta3 := 1 << j, 1 << (i + j), 1 << (i - j + s.m)
+        if (sta1 & y != 0) || (sta2 & l != 0) || (sta3 & r != 0) {
+            continue
+        }
+        s.p = append(s.p, j)
+        s.dfs(i + 1, y | sta1, l | sta2, r | sta3)
+        s.p = s.p[:len(s.p) - 1]
+    }
+    return
+}
+
+func solveNQueens(n int) [][]string {
+    s := Solution{}
+    s.m = n
+    s.dfs(0, 0, 0, 0)
+    return s.ans
+}
+```
+
+#### 复杂度
+
+时间复杂度: $O(n!)$，其中 $n$ 是皇后数量
+
+空间复杂度: $O(n)$，其中 $n$ 是皇后数量

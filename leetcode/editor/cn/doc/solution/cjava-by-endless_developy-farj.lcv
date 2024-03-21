@@ -1,0 +1,95 @@
+#### 思路分析
+
+---------
+
+似乎在《挑战程序设计竞赛》中看到过类似的题目
+这里把**区间段**类比为**工作段**
+对于每一个工作的选取，可以有以下三种常规思路
+
+1. 每次选取工作时间最短的
+2. 每次选取最先开始工作的
+3. 每次选取最先结束工作的
+
+#### 反例及正确性讨论
+
+---------
+
+对于`1`的反例如下
+![image.png](https://pic.leetcode-cn.com/1662166101-vYYrsy-image.png)
+每次选择**时间最短**的任务，则会选择上方的黑色任务，答案会为2，而正确答案为3
+
+------
+
+对于`2`的反例如下
+![image.png](https://pic.leetcode-cn.com/1662166231-tbnbKf-image.png)
+每次选择**开始时间最早**的任务，则会选择下方的黑色任务，答案会为1，而正确答案会是选择蓝色任务的3
+
+--------
+
+关于`3`的正确性
+
+每次一选择**结束任务最早**的任务时，在一次选择后就会留给后方的任务更多的空间
+类似于越早结束手头的任务，越早可以开始下一个任务
+
+#### 参考代码
+
+--------
+
+* []
+
+```C++
+#define all(a) a.begin(), a.end()
+
+class Solution {
+public:
+    int findLongestChain(vector<vector<int>>& pairs) {
+        sort(all(pairs), [&](vector<int> a, vector<int> b){
+            if(a[1]==b[1])return a[0]<b[0];
+            return a[1]<b[1];
+        });
+
+        int ans=0,p=0,n=INT_MIN;
+
+        while(p<pairs.size()){
+            if(pairs[p][0]>n){
+                ++ans,n=pairs[p][1];
+            }
+            ++p;
+        }
+
+        return ans;
+    }
+};
+```
+
+* []
+
+```Java
+import java.util.Arrays;
+import java.util.Comparator;
+
+class Solution {
+    public int findLongestChain(int[][] pairs) {
+        Arrays.sort(pairs, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                if (o1[1] == o2[1]) return o1[0] - o2[0];
+                return o1[1] - o2[1];
+            }
+        });
+
+        int ans = 0, p = 0, n = Integer.MIN_VALUE;
+
+        while (p < pairs.length) {
+            if (pairs[p][0] > n) {
+                ++ans;
+                n = pairs[p][1];
+            }
+            ++p;
+        }
+
+        return ans;
+    }
+}
+```
+
