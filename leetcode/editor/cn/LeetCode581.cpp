@@ -5,10 +5,15 @@ using namespace std;
 class Solution {
 public:
     int findUnsortedSubarray(vector<int>& nums) {
-        int n = nums.size();
-        if(n <= 1)return 0;
-        int ans = 0;
+        if(is_sorted(nums.begin(), nums.end()))return 0;
+        vector<int> sorted(nums);
+        // 排序完之后比对
+        sort(sorted.begin(), sorted.end());
 
+        int left = 0, right = nums.size() - 1;
+        while(nums[left] == sorted[left]) left++;
+        while(nums[right] == sorted[right]) right --;
+        return right - left + 1;
     }
 };
 //leetcode submit region end(Prohibit modification and deletion)

@@ -205,6 +205,468 @@ build LeetCode1079.exe: CXX_EXECUTABLE_LINKER__LeetCode1079_Debug CMakeFiles/Lee
   TARGET_IMPLIB = libLeetCode1079.dll.a
   TARGET_PDB = LeetCode1079.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode164
+
+
+#############################################
+# Order-only phony target for LeetCode164
+
+build cmake_object_order_depends_target_LeetCode164: phony || CMakeFiles/LeetCode164.dir
+
+build CMakeFiles/LeetCode164.dir/leetcode/editor/cn/LeetCode164.cpp.obj: CXX_COMPILER__LeetCode164_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode164.cpp || cmake_object_order_depends_target_LeetCode164
+  DEP_FILE = CMakeFiles\LeetCode164.dir\leetcode\editor\cn\LeetCode164.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode164.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode164.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode164
+
+
+#############################################
+# Link the executable LeetCode164.exe
+
+build LeetCode164.exe: CXX_EXECUTABLE_LINKER__LeetCode164_Debug CMakeFiles/LeetCode164.dir/leetcode/editor/cn/LeetCode164.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode164.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode164.exe
+  TARGET_IMPLIB = libLeetCode164.dll.a
+  TARGET_PDB = LeetCode164.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode581
+
+
+#############################################
+# Order-only phony target for LeetCode581
+
+build cmake_object_order_depends_target_LeetCode581: phony || CMakeFiles/LeetCode581.dir
+
+build CMakeFiles/LeetCode581.dir/leetcode/editor/cn/LeetCode581.cpp.obj: CXX_COMPILER__LeetCode581_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode581.cpp || cmake_object_order_depends_target_LeetCode581
+  DEP_FILE = CMakeFiles\LeetCode581.dir\leetcode\editor\cn\LeetCode581.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode581.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode581.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode581
+
+
+#############################################
+# Link the executable LeetCode581.exe
+
+build LeetCode581.exe: CXX_EXECUTABLE_LINKER__LeetCode581_Debug CMakeFiles/LeetCode581.dir/leetcode/editor/cn/LeetCode581.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode581.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode581.exe
+  TARGET_IMPLIB = libLeetCode581.dll.a
+  TARGET_PDB = LeetCode581.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode217
+
+
+#############################################
+# Order-only phony target for LeetCode217
+
+build cmake_object_order_depends_target_LeetCode217: phony || CMakeFiles/LeetCode217.dir
+
+build CMakeFiles/LeetCode217.dir/leetcode/editor/cn/LeetCode217.cpp.obj: CXX_COMPILER__LeetCode217_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode217.cpp || cmake_object_order_depends_target_LeetCode217
+  DEP_FILE = CMakeFiles\LeetCode217.dir\leetcode\editor\cn\LeetCode217.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode217.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode217.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode217
+
+
+#############################################
+# Link the executable LeetCode217.exe
+
+build LeetCode217.exe: CXX_EXECUTABLE_LINKER__LeetCode217_Debug CMakeFiles/LeetCode217.dir/leetcode/editor/cn/LeetCode217.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode217.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode217.exe
+  TARGET_IMPLIB = libLeetCode217.dll.a
+  TARGET_PDB = LeetCode217.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode494
+
+
+#############################################
+# Order-only phony target for LeetCode494
+
+build cmake_object_order_depends_target_LeetCode494: phony || CMakeFiles/LeetCode494.dir
+
+build CMakeFiles/LeetCode494.dir/leetcode/editor/cn/LeetCode494.cpp.obj: CXX_COMPILER__LeetCode494_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode494.cpp || cmake_object_order_depends_target_LeetCode494
+  DEP_FILE = CMakeFiles\LeetCode494.dir\leetcode\editor\cn\LeetCode494.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode494.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode494.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode494
+
+
+#############################################
+# Link the executable LeetCode494.exe
+
+build LeetCode494.exe: CXX_EXECUTABLE_LINKER__LeetCode494_Debug CMakeFiles/LeetCode494.dir/leetcode/editor/cn/LeetCode494.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode494.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode494.exe
+  TARGET_IMPLIB = libLeetCode494.dll.a
+  TARGET_PDB = LeetCode494.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode229
+
+
+#############################################
+# Order-only phony target for LeetCode229
+
+build cmake_object_order_depends_target_LeetCode229: phony || CMakeFiles/LeetCode229.dir
+
+build CMakeFiles/LeetCode229.dir/leetcode/editor/cn/LeetCode229.cpp.obj: CXX_COMPILER__LeetCode229_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode229.cpp || cmake_object_order_depends_target_LeetCode229
+  DEP_FILE = CMakeFiles\LeetCode229.dir\leetcode\editor\cn\LeetCode229.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode229.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode229.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode229
+
+
+#############################################
+# Link the executable LeetCode229.exe
+
+build LeetCode229.exe: CXX_EXECUTABLE_LINKER__LeetCode229_Debug CMakeFiles/LeetCode229.dir/leetcode/editor/cn/LeetCode229.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode229.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode229.exe
+  TARGET_IMPLIB = libLeetCode229.dll.a
+  TARGET_PDB = LeetCode229.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode1609
+
+
+#############################################
+# Order-only phony target for LeetCode1609
+
+build cmake_object_order_depends_target_LeetCode1609: phony || CMakeFiles/LeetCode1609.dir
+
+build CMakeFiles/LeetCode1609.dir/leetcode/editor/cn/LeetCode1609.cpp.obj: CXX_COMPILER__LeetCode1609_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode1609.cpp || cmake_object_order_depends_target_LeetCode1609
+  DEP_FILE = CMakeFiles\LeetCode1609.dir\leetcode\editor\cn\LeetCode1609.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode1609.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode1609.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode1609
+
+
+#############################################
+# Link the executable LeetCode1609.exe
+
+build LeetCode1609.exe: CXX_EXECUTABLE_LINKER__LeetCode1609_Debug CMakeFiles/LeetCode1609.dir/leetcode/editor/cn/LeetCode1609.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode1609.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode1609.exe
+  TARGET_IMPLIB = libLeetCode1609.dll.a
+  TARGET_PDB = LeetCode1609.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode153
+
+
+#############################################
+# Order-only phony target for LeetCode153
+
+build cmake_object_order_depends_target_LeetCode153: phony || CMakeFiles/LeetCode153.dir
+
+build CMakeFiles/LeetCode153.dir/leetcode/editor/cn/LeetCode153.cpp.obj: CXX_COMPILER__LeetCode153_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode153.cpp || cmake_object_order_depends_target_LeetCode153
+  DEP_FILE = CMakeFiles\LeetCode153.dir\leetcode\editor\cn\LeetCode153.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode153.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode153.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode153
+
+
+#############################################
+# Link the executable LeetCode153.exe
+
+build LeetCode153.exe: CXX_EXECUTABLE_LINKER__LeetCode153_Debug CMakeFiles/LeetCode153.dir/leetcode/editor/cn/LeetCode153.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode153.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode153.exe
+  TARGET_IMPLIB = libLeetCode153.dll.a
+  TARGET_PDB = LeetCode153.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode162
+
+
+#############################################
+# Order-only phony target for LeetCode162
+
+build cmake_object_order_depends_target_LeetCode162: phony || CMakeFiles/LeetCode162.dir
+
+build CMakeFiles/LeetCode162.dir/leetcode/editor/cn/LeetCode162.cpp.obj: CXX_COMPILER__LeetCode162_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode162.cpp || cmake_object_order_depends_target_LeetCode162
+  DEP_FILE = CMakeFiles\LeetCode162.dir\leetcode\editor\cn\LeetCode162.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode162.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode162.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode162
+
+
+#############################################
+# Link the executable LeetCode162.exe
+
+build LeetCode162.exe: CXX_EXECUTABLE_LINKER__LeetCode162_Debug CMakeFiles/LeetCode162.dir/leetcode/editor/cn/LeetCode162.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode162.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode162.exe
+  TARGET_IMPLIB = libLeetCode162.dll.a
+  TARGET_PDB = LeetCode162.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode729
+
+
+#############################################
+# Order-only phony target for LeetCode729
+
+build cmake_object_order_depends_target_LeetCode729: phony || CMakeFiles/LeetCode729.dir
+
+build CMakeFiles/LeetCode729.dir/leetcode/editor/cn/LeetCode729.cpp.obj: CXX_COMPILER__LeetCode729_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode729.cpp || cmake_object_order_depends_target_LeetCode729
+  DEP_FILE = CMakeFiles\LeetCode729.dir\leetcode\editor\cn\LeetCode729.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode729.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode729.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode729
+
+
+#############################################
+# Link the executable LeetCode729.exe
+
+build LeetCode729.exe: CXX_EXECUTABLE_LINKER__LeetCode729_Debug CMakeFiles/LeetCode729.dir/leetcode/editor/cn/LeetCode729.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode729.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode729.exe
+  TARGET_IMPLIB = libLeetCode729.dll.a
+  TARGET_PDB = LeetCode729.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode731
+
+
+#############################################
+# Order-only phony target for LeetCode731
+
+build cmake_object_order_depends_target_LeetCode731: phony || CMakeFiles/LeetCode731.dir
+
+build CMakeFiles/LeetCode731.dir/leetcode/editor/cn/LeetCode731.cpp.obj: CXX_COMPILER__LeetCode731_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode731.cpp || cmake_object_order_depends_target_LeetCode731
+  DEP_FILE = CMakeFiles\LeetCode731.dir\leetcode\editor\cn\LeetCode731.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode731.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode731.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode731
+
+
+#############################################
+# Link the executable LeetCode731.exe
+
+build LeetCode731.exe: CXX_EXECUTABLE_LINKER__LeetCode731_Debug CMakeFiles/LeetCode731.dir/leetcode/editor/cn/LeetCode731.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode731.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode731.exe
+  TARGET_IMPLIB = libLeetCode731.dll.a
+  TARGET_PDB = LeetCode731.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode125
+
+
+#############################################
+# Order-only phony target for LeetCode125
+
+build cmake_object_order_depends_target_LeetCode125: phony || CMakeFiles/LeetCode125.dir
+
+build CMakeFiles/LeetCode125.dir/leetcode/editor/cn/LeetCode125.cpp.obj: CXX_COMPILER__LeetCode125_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode125.cpp || cmake_object_order_depends_target_LeetCode125
+  DEP_FILE = CMakeFiles\LeetCode125.dir\leetcode\editor\cn\LeetCode125.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode125.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode125.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode125
+
+
+#############################################
+# Link the executable LeetCode125.exe
+
+build LeetCode125.exe: CXX_EXECUTABLE_LINKER__LeetCode125_Debug CMakeFiles/LeetCode125.dir/leetcode/editor/cn/LeetCode125.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode125.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode125.exe
+  TARGET_IMPLIB = libLeetCode125.dll.a
+  TARGET_PDB = LeetCode125.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode58
+
+
+#############################################
+# Order-only phony target for LeetCode58
+
+build cmake_object_order_depends_target_LeetCode58: phony || CMakeFiles/LeetCode58.dir
+
+build CMakeFiles/LeetCode58.dir/leetcode/editor/cn/LeetCode58.cpp.obj: CXX_COMPILER__LeetCode58_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode58.cpp || cmake_object_order_depends_target_LeetCode58
+  DEP_FILE = CMakeFiles\LeetCode58.dir\leetcode\editor\cn\LeetCode58.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode58.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode58.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode58
+
+
+#############################################
+# Link the executable LeetCode58.exe
+
+build LeetCode58.exe: CXX_EXECUTABLE_LINKER__LeetCode58_Debug CMakeFiles/LeetCode58.dir/leetcode/editor/cn/LeetCode58.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode58.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode58.exe
+  TARGET_IMPLIB = libLeetCode58.dll.a
+  TARGET_PDB = LeetCode58.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode191
+
+
+#############################################
+# Order-only phony target for LeetCode191
+
+build cmake_object_order_depends_target_LeetCode191: phony || CMakeFiles/LeetCode191.dir
+
+build CMakeFiles/LeetCode191.dir/leetcode/editor/cn/LeetCode191.cpp.obj: CXX_COMPILER__LeetCode191_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode191.cpp || cmake_object_order_depends_target_LeetCode191
+  DEP_FILE = CMakeFiles\LeetCode191.dir\leetcode\editor\cn\LeetCode191.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode191.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode191.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode191
+
+
+#############################################
+# Link the executable LeetCode191.exe
+
+build LeetCode191.exe: CXX_EXECUTABLE_LINKER__LeetCode191_Debug CMakeFiles/LeetCode191.dir/leetcode/editor/cn/LeetCode191.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode191.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode191.exe
+  TARGET_IMPLIB = libLeetCode191.dll.a
+  TARGET_PDB = LeetCode191.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target SimpleTest
+
+
+#############################################
+# Order-only phony target for SimpleTest
+
+build cmake_object_order_depends_target_SimpleTest: phony || CMakeFiles/SimpleTest.dir
+
+build CMakeFiles/SimpleTest.dir/others/SimpleTest.cpp.obj: CXX_COMPILER__SimpleTest_unscanned_Debug F$:/CodeArea/algorithm-solving/others/SimpleTest.cpp || cmake_object_order_depends_target_SimpleTest
+  DEP_FILE = CMakeFiles\SimpleTest.dir\others\SimpleTest.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\SimpleTest.dir
+  OBJECT_FILE_DIR = CMakeFiles\SimpleTest.dir\others
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target SimpleTest
+
+
+#############################################
+# Link the executable SimpleTest.exe
+
+build SimpleTest.exe: CXX_EXECUTABLE_LINKER__SimpleTest_Debug CMakeFiles/SimpleTest.dir/others/SimpleTest.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\SimpleTest.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = SimpleTest.exe
+  TARGET_IMPLIB = libSimpleTest.dll.a
+  TARGET_PDB = SimpleTest.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -233,11 +695,39 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build LeetCode1079: phony LeetCode1079.exe
 
+build LeetCode125: phony LeetCode125.exe
+
+build LeetCode153: phony LeetCode153.exe
+
+build LeetCode1609: phony LeetCode1609.exe
+
+build LeetCode162: phony LeetCode162.exe
+
+build LeetCode164: phony LeetCode164.exe
+
+build LeetCode191: phony LeetCode191.exe
+
+build LeetCode217: phony LeetCode217.exe
+
+build LeetCode229: phony LeetCode229.exe
+
 build LeetCode491: phony LeetCode491.exe
+
+build LeetCode494: phony LeetCode494.exe
+
+build LeetCode58: phony LeetCode58.exe
+
+build LeetCode581: phony LeetCode581.exe
+
+build LeetCode729: phony LeetCode729.exe
+
+build LeetCode731: phony LeetCode731.exe
 
 build LeetCode797: phony LeetCode797.exe
 
 build LeetCode980: phony LeetCode980.exe
+
+build SimpleTest: phony SimpleTest.exe
 
 build algorithm_solving: phony algorithm_solving.exe
 
@@ -249,7 +739,7 @@ build algorithm_solving: phony algorithm_solving.exe
 #############################################
 # Folder: F:/CodeArea/algorithm-solving/cmake-build-debug
 
-build all: phony algorithm_solving.exe LeetCode797.exe LeetCode980.exe LeetCode491.exe LeetCode1079.exe
+build all: phony algorithm_solving.exe LeetCode797.exe LeetCode980.exe LeetCode491.exe LeetCode1079.exe LeetCode164.exe LeetCode581.exe LeetCode217.exe LeetCode494.exe LeetCode229.exe LeetCode1609.exe LeetCode153.exe LeetCode162.exe LeetCode729.exe LeetCode731.exe LeetCode125.exe LeetCode58.exe LeetCode191.exe SimpleTest.exe
 
 # =============================================================================
 # Built-in targets

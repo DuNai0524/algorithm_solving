@@ -1,0 +1,5 @@
+# ninja log v5
+2	903	7331636632944159	CMakeFiles/SimpleTest.dir/others/SimpleTest.cpp.obj	6f7a32340d4d92b4
+906	1681	7331636640699035	SimpleTest.exe	b69624c47b5b7c99
+3	148	7331636766246991	CMakeFiles/SimpleTest.dir/others/SimpleTest.cpp.obj	6f7a32340d4d92b4
+148	290	7331636767646560	SimpleTest.exe	b69624c47b5b7c99
