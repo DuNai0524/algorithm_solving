@@ -667,12 +667,507 @@ build SimpleTest.exe: CXX_EXECUTABLE_LINKER__SimpleTest_Debug CMakeFiles/SimpleT
   TARGET_IMPLIB = libSimpleTest.dll.a
   TARGET_PDB = SimpleTest.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode5
+
+
+#############################################
+# Order-only phony target for LeetCode5
+
+build cmake_object_order_depends_target_LeetCode5: phony || CMakeFiles/LeetCode5.dir
+
+build CMakeFiles/LeetCode5.dir/leetcode/editor/cn/LeetCode5.cpp.obj: CXX_COMPILER__LeetCode5_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode5.cpp || cmake_object_order_depends_target_LeetCode5
+  DEP_FILE = CMakeFiles\LeetCode5.dir\leetcode\editor\cn\LeetCode5.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode5.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode5.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode5
+
+
+#############################################
+# Link the executable LeetCode5.exe
+
+build LeetCode5.exe: CXX_EXECUTABLE_LINKER__LeetCode5_Debug CMakeFiles/LeetCode5.dir/leetcode/editor/cn/LeetCode5.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode5.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode5.exe
+  TARGET_IMPLIB = libLeetCode5.dll.a
+  TARGET_PDB = LeetCode5.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode2244
+
+
+#############################################
+# Order-only phony target for LeetCode2244
+
+build cmake_object_order_depends_target_LeetCode2244: phony || CMakeFiles/LeetCode2244.dir
+
+build CMakeFiles/LeetCode2244.dir/leetcode/editor/cn/LeetCode2244.cpp.obj: CXX_COMPILER__LeetCode2244_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode2244.cpp || cmake_object_order_depends_target_LeetCode2244
+  DEP_FILE = CMakeFiles\LeetCode2244.dir\leetcode\editor\cn\LeetCode2244.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode2244.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode2244.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode2244
+
+
+#############################################
+# Link the executable LeetCode2244.exe
+
+build LeetCode2244.exe: CXX_EXECUTABLE_LINKER__LeetCode2244_Debug CMakeFiles/LeetCode2244.dir/leetcode/editor/cn/LeetCode2244.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode2244.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode2244.exe
+  TARGET_IMPLIB = libLeetCode2244.dll.a
+  TARGET_PDB = LeetCode2244.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode2644
+
+
+#############################################
+# Order-only phony target for LeetCode2644
+
+build cmake_object_order_depends_target_LeetCode2644: phony || CMakeFiles/LeetCode2644.dir
+
+build CMakeFiles/LeetCode2644.dir/leetcode/editor/cn/LeetCode2644.cpp.obj: CXX_COMPILER__LeetCode2644_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode2644.cpp || cmake_object_order_depends_target_LeetCode2644
+  DEP_FILE = CMakeFiles\LeetCode2644.dir\leetcode\editor\cn\LeetCode2644.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode2644.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode2644.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode2644
+
+
+#############################################
+# Link the executable LeetCode2644.exe
+
+build LeetCode2644.exe: CXX_EXECUTABLE_LINKER__LeetCode2644_Debug CMakeFiles/LeetCode2644.dir/leetcode/editor/cn/LeetCode2644.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode2644.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode2644.exe
+  TARGET_IMPLIB = libLeetCode2644.dll.a
+  TARGET_PDB = LeetCode2644.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode1535
+
+
+#############################################
+# Order-only phony target for LeetCode1535
+
+build cmake_object_order_depends_target_LeetCode1535: phony || CMakeFiles/LeetCode1535.dir
+
+build CMakeFiles/LeetCode1535.dir/leetcode/editor/cn/LeetCode1535.cpp.obj: CXX_COMPILER__LeetCode1535_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode1535.cpp || cmake_object_order_depends_target_LeetCode1535
+  DEP_FILE = CMakeFiles\LeetCode1535.dir\leetcode\editor\cn\LeetCode1535.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode1535.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode1535.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode1535
+
+
+#############################################
+# Link the executable LeetCode1535.exe
+
+build LeetCode1535.exe: CXX_EXECUTABLE_LINKER__LeetCode1535_Debug CMakeFiles/LeetCode1535.dir/leetcode/editor/cn/LeetCode1535.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode1535.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode1535.exe
+  TARGET_IMPLIB = libLeetCode1535.dll.a
+  TARGET_PDB = LeetCode1535.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target C
+
+
+#############################################
+# Order-only phony target for C
+
+build cmake_object_order_depends_target_C: phony || CMakeFiles/C.dir
+
+build CMakeFiles/C.dir/leetcode/contests/weekly399/C.cpp.obj: CXX_COMPILER__C_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/contests/weekly399/C.cpp || cmake_object_order_depends_target_C
+  DEP_FILE = CMakeFiles\C.dir\leetcode\contests\weekly399\C.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\C.dir
+  OBJECT_FILE_DIR = CMakeFiles\C.dir\leetcode\contests\weekly399
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target C
+
+
+#############################################
+# Link the executable C.exe
+
+build C.exe: CXX_EXECUTABLE_LINKER__C_Debug CMakeFiles/C.dir/leetcode/contests/weekly399/C.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\C.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = C.exe
+  TARGET_IMPLIB = libC.dll.a
+  TARGET_PDB = C.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target B
+
+
+#############################################
+# Order-only phony target for B
+
+build cmake_object_order_depends_target_B: phony || CMakeFiles/B.dir
+
+build CMakeFiles/B.dir/leetcode/contests/weekly399/B.cpp.obj: CXX_COMPILER__B_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/contests/weekly399/B.cpp || cmake_object_order_depends_target_B
+  DEP_FILE = CMakeFiles\B.dir\leetcode\contests\weekly399\B.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\B.dir
+  OBJECT_FILE_DIR = CMakeFiles\B.dir\leetcode\contests\weekly399
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target B
+
+
+#############################################
+# Link the executable B.exe
+
+build B.exe: CXX_EXECUTABLE_LINKER__B_Debug CMakeFiles/B.dir/leetcode/contests/weekly399/B.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\B.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = B.exe
+  TARGET_IMPLIB = libB.dll.a
+  TARGET_PDB = B.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target A
+
+
+#############################################
+# Order-only phony target for A
+
+build cmake_object_order_depends_target_A: phony || CMakeFiles/A.dir
+
+build CMakeFiles/A.dir/leetcode/contests/contest398/A.cpp.obj: CXX_COMPILER__A_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/contests/contest398/A.cpp || cmake_object_order_depends_target_A
+  DEP_FILE = CMakeFiles\A.dir\leetcode\contests\contest398\A.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\A.dir
+  OBJECT_FILE_DIR = CMakeFiles\A.dir\leetcode\contests\contest398
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target A
+
+
+#############################################
+# Link the executable A.exe
+
+build A.exe: CXX_EXECUTABLE_LINKER__A_Debug CMakeFiles/A.dir/leetcode/contests/contest398/A.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\A.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = A.exe
+  TARGET_IMPLIB = libA.dll.a
+  TARGET_PDB = A.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode2225
+
+
+#############################################
+# Order-only phony target for LeetCode2225
+
+build cmake_object_order_depends_target_LeetCode2225: phony || CMakeFiles/LeetCode2225.dir
+
+build CMakeFiles/LeetCode2225.dir/leetcode/editor/cn/LeetCode2225.cpp.obj: CXX_COMPILER__LeetCode2225_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode2225.cpp || cmake_object_order_depends_target_LeetCode2225
+  DEP_FILE = CMakeFiles\LeetCode2225.dir\leetcode\editor\cn\LeetCode2225.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode2225.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode2225.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode2225
+
+
+#############################################
+# Link the executable LeetCode2225.exe
+
+build LeetCode2225.exe: CXX_EXECUTABLE_LINKER__LeetCode2225_Debug CMakeFiles/LeetCode2225.dir/leetcode/editor/cn/LeetCode2225.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode2225.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode2225.exe
+  TARGET_IMPLIB = libLeetCode2225.dll.a
+  TARGET_PDB = LeetCode2225.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode1441
+
+
+#############################################
+# Order-only phony target for LeetCode1441
+
+build cmake_object_order_depends_target_LeetCode1441: phony || CMakeFiles/LeetCode1441.dir
+
+build CMakeFiles/LeetCode1441.dir/leetcode/editor/cn/LeetCode1441.cpp.obj: CXX_COMPILER__LeetCode1441_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode1441.cpp || cmake_object_order_depends_target_LeetCode1441
+  DEP_FILE = CMakeFiles\LeetCode1441.dir\leetcode\editor\cn\LeetCode1441.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode1441.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode1441.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode1441
+
+
+#############################################
+# Link the executable LeetCode1441.exe
+
+build LeetCode1441.exe: CXX_EXECUTABLE_LINKER__LeetCode1441_Debug CMakeFiles/LeetCode1441.dir/leetcode/editor/cn/LeetCode1441.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode1441.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode1441.exe
+  TARGET_IMPLIB = libLeetCode1441.dll.a
+  TARGET_PDB = LeetCode1441.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode2903
+
+
+#############################################
+# Order-only phony target for LeetCode2903
+
+build cmake_object_order_depends_target_LeetCode2903: phony || CMakeFiles/LeetCode2903.dir
+
+build CMakeFiles/LeetCode2903.dir/leetcode/editor/cn/LeetCode2903.cpp.obj: CXX_COMPILER__LeetCode2903_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode2903.cpp || cmake_object_order_depends_target_LeetCode2903
+  DEP_FILE = CMakeFiles\LeetCode2903.dir\leetcode\editor\cn\LeetCode2903.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode2903.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode2903.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode2903
+
+
+#############################################
+# Link the executable LeetCode2903.exe
+
+build LeetCode2903.exe: CXX_EXECUTABLE_LINKER__LeetCode2903_Debug CMakeFiles/LeetCode2903.dir/leetcode/editor/cn/LeetCode2903.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode2903.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode2903.exe
+  TARGET_IMPLIB = libLeetCode2903.dll.a
+  TARGET_PDB = LeetCode2903.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode2905
+
+
+#############################################
+# Order-only phony target for LeetCode2905
+
+build cmake_object_order_depends_target_LeetCode2905: phony || CMakeFiles/LeetCode2905.dir
+
+build CMakeFiles/LeetCode2905.dir/leetcode/editor/cn/LeetCode2905.cpp.obj: CXX_COMPILER__LeetCode2905_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode2905.cpp || cmake_object_order_depends_target_LeetCode2905
+  DEP_FILE = CMakeFiles\LeetCode2905.dir\leetcode\editor\cn\LeetCode2905.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode2905.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode2905.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode2905
+
+
+#############################################
+# Link the executable LeetCode2905.exe
+
+build LeetCode2905.exe: CXX_EXECUTABLE_LINKER__LeetCode2905_Debug CMakeFiles/LeetCode2905.dir/leetcode/editor/cn/LeetCode2905.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode2905.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode2905.exe
+  TARGET_IMPLIB = libLeetCode2905.dll.a
+  TARGET_PDB = LeetCode2905.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target B131C
+
+
+#############################################
+# Order-only phony target for B131C
+
+build cmake_object_order_depends_target_B131C: phony || CMakeFiles/B131C.dir
+
+build CMakeFiles/B131C.dir/leetcode/contests/bi131/B131C.cpp.obj: CXX_COMPILER__B131C_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/contests/bi131/B131C.cpp || cmake_object_order_depends_target_B131C
+  DEP_FILE = CMakeFiles\B131C.dir\leetcode\contests\bi131\B131C.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\B131C.dir
+  OBJECT_FILE_DIR = CMakeFiles\B131C.dir\leetcode\contests\bi131
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target B131C
+
+
+#############################################
+# Link the executable B131C.exe
+
+build B131C.exe: CXX_EXECUTABLE_LINKER__B131C_Debug CMakeFiles/B131C.dir/leetcode/contests/bi131/B131C.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\B131C.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = B131C.exe
+  TARGET_IMPLIB = libB131C.dll.a
+  TARGET_PDB = B131C.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target B131B
+
+
+#############################################
+# Order-only phony target for B131B
+
+build cmake_object_order_depends_target_B131B: phony || CMakeFiles/B131B.dir
+
+build CMakeFiles/B131B.dir/leetcode/contests/bi131/B131B.cpp.obj: CXX_COMPILER__B131B_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/contests/bi131/B131B.cpp || cmake_object_order_depends_target_B131B
+  DEP_FILE = CMakeFiles\B131B.dir\leetcode\contests\bi131\B131B.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\B131B.dir
+  OBJECT_FILE_DIR = CMakeFiles\B131B.dir\leetcode\contests\bi131
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target B131B
+
+
+#############################################
+# Link the executable B131B.exe
+
+build B131B.exe: CXX_EXECUTABLE_LINKER__B131B_Debug CMakeFiles/B131B.dir/leetcode/contests/bi131/B131B.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\B131B.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = B131B.exe
+  TARGET_IMPLIB = libB131B.dll.a
+  TARGET_PDB = B131B.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target B131A
+
+
+#############################################
+# Order-only phony target for B131A
+
+build cmake_object_order_depends_target_B131A: phony || CMakeFiles/B131A.dir
+
+build CMakeFiles/B131A.dir/leetcode/contests/bi131/B131A.cpp.obj: CXX_COMPILER__B131A_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/contests/bi131/B131A.cpp || cmake_object_order_depends_target_B131A
+  DEP_FILE = CMakeFiles\B131A.dir\leetcode\contests\bi131\B131A.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\B131A.dir
+  OBJECT_FILE_DIR = CMakeFiles\B131A.dir\leetcode\contests\bi131
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target B131A
+
+
+#############################################
+# Link the executable B131A.exe
+
+build B131A.exe: CXX_EXECUTABLE_LINKER__B131A_Debug CMakeFiles/B131A.dir/leetcode/contests/bi131/B131A.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\B131A.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = B131A.exe
+  TARGET_IMPLIB = libB131A.dll.a
+  TARGET_PDB = B131A.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode1738
+
+
+#############################################
+# Order-only phony target for LeetCode1738
+
+build cmake_object_order_depends_target_LeetCode1738: phony || CMakeFiles/LeetCode1738.dir
+
+build CMakeFiles/LeetCode1738.dir/leetcode/editor/cn/LeetCode1738.cpp.obj: CXX_COMPILER__LeetCode1738_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode1738.cpp || cmake_object_order_depends_target_LeetCode1738
+  DEP_FILE = CMakeFiles\LeetCode1738.dir\leetcode\editor\cn\LeetCode1738.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode1738.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode1738.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode1738
+
+
+#############################################
+# Link the executable LeetCode1738.exe
+
+build LeetCode1738.exe: CXX_EXECUTABLE_LINKER__LeetCode1738_Debug CMakeFiles/LeetCode1738.dir/leetcode/editor/cn/LeetCode1738.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode1738.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode1738.exe
+  TARGET_IMPLIB = libLeetCode1738.dll.a
+  TARGET_PDB = LeetCode1738.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\CodeArea\algorithm-solving\cmake-build-debug && "E:\Jetbrain\CLion Nova\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\CodeArea\algorithm-solving\cmake-build-debug && E:\Jetbrain\CLion\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -683,7 +1178,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\CodeArea\algorithm-solving\cmake-build-debug && "E:\Jetbrain\CLion Nova\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SF:\CodeArea\algorithm-solving -BF:\CodeArea\algorithm-solving\cmake-build-debug"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D F:\CodeArea\algorithm-solving\cmake-build-debug && E:\Jetbrain\CLion\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SF:\CodeArea\algorithm-solving -BF:\CodeArea\algorithm-solving\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -693,11 +1188,27 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build A: phony A.exe
+
+build B: phony B.exe
+
+build B131A: phony B131A.exe
+
+build B131B: phony B131B.exe
+
+build B131C: phony B131C.exe
+
+build C: phony C.exe
+
 build LeetCode1079: phony LeetCode1079.exe
 
 build LeetCode125: phony LeetCode125.exe
 
+build LeetCode1441: phony LeetCode1441.exe
+
 build LeetCode153: phony LeetCode153.exe
+
+build LeetCode1535: phony LeetCode1535.exe
 
 build LeetCode1609: phony LeetCode1609.exe
 
@@ -705,15 +1216,29 @@ build LeetCode162: phony LeetCode162.exe
 
 build LeetCode164: phony LeetCode164.exe
 
+build LeetCode1738: phony LeetCode1738.exe
+
 build LeetCode191: phony LeetCode191.exe
 
 build LeetCode217: phony LeetCode217.exe
 
+build LeetCode2225: phony LeetCode2225.exe
+
+build LeetCode2244: phony LeetCode2244.exe
+
 build LeetCode229: phony LeetCode229.exe
+
+build LeetCode2644: phony LeetCode2644.exe
+
+build LeetCode2903: phony LeetCode2903.exe
+
+build LeetCode2905: phony LeetCode2905.exe
 
 build LeetCode491: phony LeetCode491.exe
 
 build LeetCode494: phony LeetCode494.exe
+
+build LeetCode5: phony LeetCode5.exe
 
 build LeetCode58: phony LeetCode58.exe
 
@@ -739,7 +1264,7 @@ build algorithm_solving: phony algorithm_solving.exe
 #############################################
 # Folder: F:/CodeArea/algorithm-solving/cmake-build-debug
 
-build all: phony algorithm_solving.exe LeetCode797.exe LeetCode980.exe LeetCode491.exe LeetCode1079.exe LeetCode164.exe LeetCode581.exe LeetCode217.exe LeetCode494.exe LeetCode229.exe LeetCode1609.exe LeetCode153.exe LeetCode162.exe LeetCode729.exe LeetCode731.exe LeetCode125.exe LeetCode58.exe LeetCode191.exe SimpleTest.exe
+build all: phony algorithm_solving.exe LeetCode797.exe LeetCode980.exe LeetCode491.exe LeetCode1079.exe LeetCode164.exe LeetCode581.exe LeetCode217.exe LeetCode494.exe LeetCode229.exe LeetCode1609.exe LeetCode153.exe LeetCode162.exe LeetCode729.exe LeetCode731.exe LeetCode125.exe LeetCode58.exe LeetCode191.exe SimpleTest.exe LeetCode5.exe LeetCode2244.exe LeetCode2644.exe LeetCode1535.exe C.exe B.exe A.exe LeetCode2225.exe LeetCode1441.exe LeetCode2903.exe LeetCode2905.exe B131C.exe B131B.exe B131A.exe LeetCode1738.exe
 
 # =============================================================================
 # Built-in targets
@@ -748,14 +1273,14 @@ build all: phony algorithm_solving.exe LeetCode797.exe LeetCode980.exe LeetCode4
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake F$:/CodeArea/algorithm-solving/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake F$:/CodeArea/algorithm-solving/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake E$:/Jetbrain/CLion$ Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake F$:/CodeArea/algorithm-solving/CMakeLists.txt: phony
+build CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCXXInformation.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeRCInformation.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C-ABI.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-C.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX-ABI.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU-CXX.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-GNU.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows-windres.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake E$:/Jetbrain/CLion/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake F$:/CodeArea/algorithm-solving/CMakeLists.txt: phony
 
 
 #############################################

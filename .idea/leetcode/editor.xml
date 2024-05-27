@@ -3,6 +3,17 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/994腐烂的橘子.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode994.md" />
+              <option name="frontendQuestionId" value="leetcode.cn994" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode994.cpp" />
+              <option name="titleSlug" value="rotting-oranges" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode1079.cpp">
           <value>
             <LeetcodeEditor>
@@ -69,6 +80,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode1441.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode1441.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1441" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode1441.cpp" />
+              <option name="titleSlug" value="build-an-array-with-stack-operations" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode147.cpp">
           <value>
             <LeetcodeEditor>
@@ -88,6 +110,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode153.cpp" />
               <option name="titleSlug" value="find-minimum-in-rotated-sorted-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode1535.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode1535.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1535" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode1535.cpp" />
+              <option name="titleSlug" value="find-the-winner-of-an-array-game" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -135,6 +168,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode1738.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode1738.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1738" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode1738.cpp" />
+              <option name="titleSlug" value="find-kth-largest-xor-coordinate-value" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode191.cpp">
           <value>
             <LeetcodeEditor>
@@ -168,6 +212,28 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode2225.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode2225.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2225" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode2225.cpp" />
+              <option name="titleSlug" value="find-players-with-zero-or-one-losses" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode2244.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode2244.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2244" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode2244.cpp" />
+              <option name="titleSlug" value="minimum-rounds-to-complete-all-tasks" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode229.cpp">
           <value>
             <LeetcodeEditor>
@@ -176,6 +242,39 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode229.cpp" />
               <option name="titleSlug" value="majority-element-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode2644.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode2644.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2644" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode2644.cpp" />
+              <option name="titleSlug" value="find-the-maximum-divisibility-score" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode2903.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode2903.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2903" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode2903.cpp" />
+              <option name="titleSlug" value="find-indices-with-index-and-value-difference-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode2905.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode2905.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2905" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode2905.cpp" />
+              <option name="titleSlug" value="find-indices-with-index-and-value-difference-ii" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -231,6 +330,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode494.cpp" />
               <option name="titleSlug" value="target-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode5.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode5.md" />
+              <option name="frontendQuestionId" value="leetcode.cn5" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode5.cpp" />
+              <option name="titleSlug" value="longest-palindromic-substring" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -352,6 +462,72 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode980.cpp" />
               <option name="titleSlug" value="unique-paths-iii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode994.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode994.md" />
+              <option name="frontendQuestionId" value="leetcode.cn994" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode994.cpp" />
+              <option name="titleSlug" value="rotting-oranges" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/[994]腐烂的橘子.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode994.md" />
+              <option name="frontendQuestionId" value="leetcode.cn994" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode994.cpp" />
+              <option name="titleSlug" value="rotting-oranges" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/leetcode/editor/cn/994腐烂的橘子.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode994.md" />
+              <option name="frontendQuestionId" value="leetcode.cn994" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode994.cpp" />
+              <option name="titleSlug" value="rotting-oranges" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/leetcode/editor/cn/LeetCode994.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode994.md" />
+              <option name="frontendQuestionId" value="leetcode.cn994" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode994.cpp" />
+              <option name="titleSlug" value="rotting-oranges" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/leetcode/editor/cn/[994]腐烂的橘子.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode994.md" />
+              <option name="frontendQuestionId" value="leetcode.cn994" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode994.cpp" />
+              <option name="titleSlug" value="rotting-oranges" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/leetcode/editor/cn/[994]腐烂的橘子.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode994.md" />
+              <option name="frontendQuestionId" value="leetcode.cn994" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode994.cpp" />
+              <option name="titleSlug" value="rotting-oranges" />
             </LeetcodeEditor>
           </value>
         </entry>
