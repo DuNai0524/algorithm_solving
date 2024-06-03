@@ -1,6 +1,6 @@
-#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
-    printf("114514");
-    return 0;
+    
 }

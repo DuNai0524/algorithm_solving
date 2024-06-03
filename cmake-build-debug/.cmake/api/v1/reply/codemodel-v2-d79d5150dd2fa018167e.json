@@ -48,7 +48,12 @@
 						30,
 						31,
 						32,
-						33
+						33,
+						34,
+						35,
+						36,
+						37,
+						38
 					]
 				}
 			],
@@ -96,7 +101,12 @@
 						30,
 						31,
 						32,
-						33
+						33,
+						34,
+						35,
+						36,
+						37,
+						38
 					]
 				}
 			],
@@ -142,6 +152,27 @@
 					"id" : "C::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-C-Debug-426c06bc1a5989830ecf.json",
 					"name" : "C",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Contest400A::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Contest400A-Debug-2c89df9982631c0faa82.json",
+					"name" : "Contest400A",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Contest400B::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Contest400B-Debug-49aa96f9ae78f48fd719.json",
+					"name" : "Contest400B",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Contest400C::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Contest400C-Debug-7a9702bbf19caaf391ca.json",
+					"name" : "Contest400C",
 					"projectIndex" : 0
 				},
 				{
@@ -261,6 +292,20 @@
 					"id" : "LeetCode2905::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-LeetCode2905-Debug-49f6c79b6b9bd5d32774.json",
 					"name" : "LeetCode2905",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LeetCode2928::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LeetCode2928-Debug-3c37d2df42818b49ac43.json",
+					"name" : "LeetCode2928",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LeetCode2965::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LeetCode2965-Debug-552abe0bd2ca6a4324bd.json",
+					"name" : "LeetCode2965",
 					"projectIndex" : 0
 				},
 				{

@@ -278,6 +278,28 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode2928.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode2928.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2928" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode2928.cpp" />
+              <option name="titleSlug" value="distribute-candies-among-children-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode2965.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode2965.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2965" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode2965.cpp" />
+              <option name="titleSlug" value="find-missing-and-repeated-values" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode399.cpp">
           <value>
             <LeetcodeEditor>
