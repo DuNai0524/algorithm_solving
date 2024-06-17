@@ -37,5 +37,9 @@ F:/CodeArea/algorithm-solving/cmake-build-debug/CMakeFiles/LeetCode2928.dir
 F:/CodeArea/algorithm-solving/cmake-build-debug/CMakeFiles/Contest400A.dir
 F:/CodeArea/algorithm-solving/cmake-build-debug/CMakeFiles/Contest400C.dir
 F:/CodeArea/algorithm-solving/cmake-build-debug/CMakeFiles/Contest400B.dir
+F:/CodeArea/algorithm-solving/cmake-build-debug/CMakeFiles/LeetCode3040.dir
+F:/CodeArea/algorithm-solving/cmake-build-debug/CMakeFiles/LeetCode881.dir
+F:/CodeArea/algorithm-solving/cmake-build-debug/CMakeFiles/LeetCode3178.dir
+F:/CodeArea/algorithm-solving/cmake-build-debug/CMakeFiles/LeetCode3179.dir
 F:/CodeArea/algorithm-solving/cmake-build-debug/CMakeFiles/edit_cache.dir
 F:/CodeArea/algorithm-solving/cmake-build-debug/CMakeFiles/rebuild_cache.dir

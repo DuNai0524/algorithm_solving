@@ -300,6 +300,39 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode3040.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode3040.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3040" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode3040.cpp" />
+              <option name="titleSlug" value="maximum-number-of-operations-with-the-same-score-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode3178.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode3178.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3178" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode3178.cpp" />
+              <option name="titleSlug" value="find-the-child-who-has-the-ball-after-k-seconds" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode3179.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode3179.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3179" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode3179.cpp" />
+              <option name="titleSlug" value="find-the-n-th-value-after-k-seconds" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode399.cpp">
           <value>
             <LeetcodeEditor>
@@ -462,6 +495,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode816.cpp" />
               <option name="titleSlug" value="ambiguous-coordinates" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/editor/cn/LeetCode881.cpp">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/leetcode/editor/cn/doc/content/LeetCode881.md" />
+              <option name="frontendQuestionId" value="leetcode.cn881" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/leetcode/editor/cn/LeetCode881.cpp" />
+              <option name="titleSlug" value="boats-to-save-people" />
             </LeetcodeEditor>
           </value>
         </entry>

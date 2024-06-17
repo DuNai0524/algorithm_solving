@@ -1,0 +1,32 @@
+> Problem: [881. 救生艇](https://leetcode.cn/problems/boats-to-save-people/description/)
+
+[TOC]
+
+# 思路
+
+1. **排序数组**。
+2. **使用双指针法**：一个指针从数组的开头（最轻的人）开始，另一个指针从数组的末尾（最重的人）开始。
+3. **配对和计数**：尝试将最轻和最重的人配对，如果他们的重量和小于等于limit，就将两个指针向中间移动；否则，只移动重的一方。
+
+# Code
+
+* []
+
+```Python
+from typing import List
+
+class Solution:
+    def numRescueBoats(self, people: List[int], limit: int) -> int:
+        people.sort()  # 先对数组进行排序
+        i, j = 0, len(people) - 1  # 使用双指针，一个指向最轻的人，一个指向最重的人
+        boats = 0  # 记录船的数量
+
+        while i <= j:  # 当指针没有交错时
+            if people[i] + people[j] <= limit:  # 如果最轻和最重的人可以一起搭船
+                i += 1  # 最轻的人上船，指针右移
+            j -= 1  # 最重的人上船，指针左移
+            boats += 1  # 船的数量增加
+
+        return boats
+```
+

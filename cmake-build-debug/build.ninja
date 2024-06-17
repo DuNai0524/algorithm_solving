@@ -1327,6 +1327,138 @@ build Contest400B.exe: CXX_EXECUTABLE_LINKER__Contest400B_Debug CMakeFiles/Conte
   TARGET_IMPLIB = libContest400B.dll.a
   TARGET_PDB = Contest400B.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode3040
+
+
+#############################################
+# Order-only phony target for LeetCode3040
+
+build cmake_object_order_depends_target_LeetCode3040: phony || CMakeFiles/LeetCode3040.dir
+
+build CMakeFiles/LeetCode3040.dir/leetcode/editor/cn/LeetCode3040.cpp.obj: CXX_COMPILER__LeetCode3040_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode3040.cpp || cmake_object_order_depends_target_LeetCode3040
+  DEP_FILE = CMakeFiles\LeetCode3040.dir\leetcode\editor\cn\LeetCode3040.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode3040.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode3040.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode3040
+
+
+#############################################
+# Link the executable LeetCode3040.exe
+
+build LeetCode3040.exe: CXX_EXECUTABLE_LINKER__LeetCode3040_Debug CMakeFiles/LeetCode3040.dir/leetcode/editor/cn/LeetCode3040.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode3040.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode3040.exe
+  TARGET_IMPLIB = libLeetCode3040.dll.a
+  TARGET_PDB = LeetCode3040.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode881
+
+
+#############################################
+# Order-only phony target for LeetCode881
+
+build cmake_object_order_depends_target_LeetCode881: phony || CMakeFiles/LeetCode881.dir
+
+build CMakeFiles/LeetCode881.dir/leetcode/editor/cn/LeetCode881.cpp.obj: CXX_COMPILER__LeetCode881_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode881.cpp || cmake_object_order_depends_target_LeetCode881
+  DEP_FILE = CMakeFiles\LeetCode881.dir\leetcode\editor\cn\LeetCode881.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode881.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode881.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode881
+
+
+#############################################
+# Link the executable LeetCode881.exe
+
+build LeetCode881.exe: CXX_EXECUTABLE_LINKER__LeetCode881_Debug CMakeFiles/LeetCode881.dir/leetcode/editor/cn/LeetCode881.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode881.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode881.exe
+  TARGET_IMPLIB = libLeetCode881.dll.a
+  TARGET_PDB = LeetCode881.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode3178
+
+
+#############################################
+# Order-only phony target for LeetCode3178
+
+build cmake_object_order_depends_target_LeetCode3178: phony || CMakeFiles/LeetCode3178.dir
+
+build CMakeFiles/LeetCode3178.dir/leetcode/editor/cn/LeetCode3178.cpp.obj: CXX_COMPILER__LeetCode3178_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode3178.cpp || cmake_object_order_depends_target_LeetCode3178
+  DEP_FILE = CMakeFiles\LeetCode3178.dir\leetcode\editor\cn\LeetCode3178.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode3178.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode3178.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode3178
+
+
+#############################################
+# Link the executable LeetCode3178.exe
+
+build LeetCode3178.exe: CXX_EXECUTABLE_LINKER__LeetCode3178_Debug CMakeFiles/LeetCode3178.dir/leetcode/editor/cn/LeetCode3178.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode3178.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode3178.exe
+  TARGET_IMPLIB = libLeetCode3178.dll.a
+  TARGET_PDB = LeetCode3178.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target LeetCode3179
+
+
+#############################################
+# Order-only phony target for LeetCode3179
+
+build cmake_object_order_depends_target_LeetCode3179: phony || CMakeFiles/LeetCode3179.dir
+
+build CMakeFiles/LeetCode3179.dir/leetcode/editor/cn/LeetCode3179.cpp.obj: CXX_COMPILER__LeetCode3179_unscanned_Debug F$:/CodeArea/algorithm-solving/leetcode/editor/cn/LeetCode3179.cpp || cmake_object_order_depends_target_LeetCode3179
+  DEP_FILE = CMakeFiles\LeetCode3179.dir\leetcode\editor\cn\LeetCode3179.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LeetCode3179.dir
+  OBJECT_FILE_DIR = CMakeFiles\LeetCode3179.dir\leetcode\editor\cn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target LeetCode3179
+
+
+#############################################
+# Link the executable LeetCode3179.exe
+
+build LeetCode3179.exe: CXX_EXECUTABLE_LINKER__LeetCode3179_Debug CMakeFiles/LeetCode3179.dir/leetcode/editor/cn/LeetCode3179.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\LeetCode3179.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = LeetCode3179.exe
+  TARGET_IMPLIB = libLeetCode3179.dll.a
+  TARGET_PDB = LeetCode3179.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -1409,6 +1541,12 @@ build LeetCode2928: phony LeetCode2928.exe
 
 build LeetCode2965: phony LeetCode2965.exe
 
+build LeetCode3040: phony LeetCode3040.exe
+
+build LeetCode3178: phony LeetCode3178.exe
+
+build LeetCode3179: phony LeetCode3179.exe
+
 build LeetCode491: phony LeetCode491.exe
 
 build LeetCode494: phony LeetCode494.exe
@@ -1425,6 +1563,8 @@ build LeetCode731: phony LeetCode731.exe
 
 build LeetCode797: phony LeetCode797.exe
 
+build LeetCode881: phony LeetCode881.exe
+
 build LeetCode980: phony LeetCode980.exe
 
 build SimpleTest: phony SimpleTest.exe
@@ -1439,7 +1579,7 @@ build algorithm_solving: phony algorithm_solving.exe
 #############################################
 # Folder: F:/CodeArea/algorithm-solving/cmake-build-debug
 
-build all: phony algorithm_solving.exe LeetCode797.exe LeetCode980.exe LeetCode491.exe LeetCode1079.exe LeetCode164.exe LeetCode581.exe LeetCode217.exe LeetCode494.exe LeetCode229.exe LeetCode1609.exe LeetCode153.exe LeetCode162.exe LeetCode729.exe LeetCode731.exe LeetCode125.exe LeetCode58.exe LeetCode191.exe SimpleTest.exe LeetCode5.exe LeetCode2244.exe LeetCode2644.exe LeetCode1535.exe C.exe B.exe A.exe LeetCode2225.exe LeetCode1441.exe LeetCode2903.exe LeetCode2905.exe B131C.exe B131B.exe B131A.exe LeetCode1738.exe LeetCode2965.exe LeetCode2928.exe Contest400A.exe Contest400C.exe Contest400B.exe
+build all: phony algorithm_solving.exe LeetCode797.exe LeetCode980.exe LeetCode491.exe LeetCode1079.exe LeetCode164.exe LeetCode581.exe LeetCode217.exe LeetCode494.exe LeetCode229.exe LeetCode1609.exe LeetCode153.exe LeetCode162.exe LeetCode729.exe LeetCode731.exe LeetCode125.exe LeetCode58.exe LeetCode191.exe SimpleTest.exe LeetCode5.exe LeetCode2244.exe LeetCode2644.exe LeetCode1535.exe C.exe B.exe A.exe LeetCode2225.exe LeetCode1441.exe LeetCode2903.exe LeetCode2905.exe B131C.exe B131B.exe B131A.exe LeetCode1738.exe LeetCode2965.exe LeetCode2928.exe Contest400A.exe Contest400C.exe Contest400B.exe LeetCode3040.exe LeetCode881.exe LeetCode3178.exe LeetCode3179.exe
 
 # =============================================================================
 # Built-in targets
