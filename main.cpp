@@ -2,7 +2,8 @@
 using namespace std;
 
 int main() {
-    short si = -32767;
-    unsigned short usi = si;
-    cout<<usi<<endl;
+    int m = 13;
+    float a = 12.6, x;
+    x = m / 2 + a / 2;
+    printf("%f",x);
 }

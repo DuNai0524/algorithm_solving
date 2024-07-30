@@ -1,0 +1,18 @@
+# 📺 视频题解
+
+![11月15日.mov](https://leetcode.cn/problems/linked-list-cycle/solution/huan-xing-lian-biao-de-pan-duan-by-leetc-w98h/bd52c20f-e37f-455b-84ab-de214d68c10c)
+
+# 📖 知识速递
+
+双指针技术本质上是依赖 **速度** 或 **起始位置不同** 的两个指针对于链表的遍历来实现对问题的快速解决
+
+- 核心在于确定两个指针式如何遍历链表的
+
+- 其次，由于遍历过程中双指针的位置和速度不一样，需要注意循环的结束条件
+
+- 快慢指针在空间复杂度上更有优势
+
+> 以上内容出自课程[《链表》](https://leetcode.cn/leetbook/detail/ji-chu-shu-ju-jie-gou-lian-biao/)
+> [![图片 6.png](https://pic.leetcode.cn/1667455250-rpUpXm-%E5%9B%BE%E7%89%87%206.png)](https://leetcode.cn/leetbook/detail/ji-chu-shu-ju-jie-gou-lian-biao/)
+> 链表的结构、操作等更多相关学习内容，欢迎点击👆
+
