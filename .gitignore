@@ -1,3 +1,3 @@
 # 忽略 cph 与工作区文件
-.cph/
-.vscode/
+**/.cph/
+**/.vscode/
